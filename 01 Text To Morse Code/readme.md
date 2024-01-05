@@ -1,4 +1,4 @@
-<h1> The key lines of the Morse code converter Python script <h1>
+## The key lines of the Morse code converter Python script 
 
 1. `MORSE_CODE_DICT`: This is a dictionary that maps each character to its Morse code representation. It includes uppercase letters, numbers, and some common punctuation marks.
 
