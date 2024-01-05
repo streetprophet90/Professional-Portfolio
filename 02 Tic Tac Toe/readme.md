@@ -1,4 +1,4 @@
-The key lines of the Tic Tac Toe Python script
+## The key lines of the Tic Tac Toe Python script
 
 1. `print_board(board)`: This function prints the current state of the Tic Tac Toe board to the console. It uses a nested loop to iterate over each cell in the 3x3 grid.
 
