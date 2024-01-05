@@ -1,4 +1,4 @@
-##Professional Portfolio with Angela Yu's 100 days of Code
+## Professional Portfolio with Angela Yu's 100 days of Code
 
 In the upcoming twenty days or beyond, I am dedicating myself to the development of my professional portfolio following the completion of the 100 Days of Code program instructed by Angela Yu on Udemy. I encourage you to explore this course and its associated Python module, as it has proven highly beneficial to my skill development.
 
