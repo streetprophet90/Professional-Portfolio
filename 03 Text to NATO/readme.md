@@ -1,4 +1,4 @@
-The key lines of the NATO phonetic alphabet converter Python script:
+## The key lines of the NATO phonetic alphabet converter Python script:
 
 1. `NATO_PHONETIC_ALPHABET`: This is a dictionary that maps each uppercase letter and space to its NATO phonetic alphabet equivalent.
 
