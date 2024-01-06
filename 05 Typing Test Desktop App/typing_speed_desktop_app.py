@@ -35,34 +35,34 @@ class TypingSpeedTestApp:
         self.label_typing_speed = tk.Label(self.root, text="Typing Speed: ")
         self.label_typing_speed.grid(row=3, column=0, columnspan=2, pady=10)
 
-        def start_typing(self):
+    def start_typing(self):
             #record the start time when the user start typing
             self.start_time = time()
 
-        def calculate_wpm(self):
-            if self.start_time:
-                end_time = time()
-                elapsed_time = end_time - self.start_time
+    def calculate_wpm(self):
+        if self.start_time:
+            end_time = time()
+            elapsed_time = end_time - self.start_time
 
-                #count number of words in the sample text 
-                total_words = len(self.sample_text.split())
+            #count number of words in the sample text 
+            total_words = len(self.sample_text.split())
 
-                #count the number of words the user typed 
-            if self.start_time:
-                end_time = time()
-                elapsed_time = end_time - self.start_time
+            #count the number of words the user typed 
+        if self.start_time:
+            end_time = time()
+            elapsed_time = end_time - self.start_time
 
-                # Count the number of words in the sample text
-                total_words = len(self.sample_text.split())
+            # Count the number of words in the sample text
+            total_words = len(self.sample_text.split())
 
-                # Count the number of words the user typed
-                user_words = len(self.user_input.get().split())
+            # Count the number of words the user typed
+            user_words = len(self.user_input.get().split())
 
-                # Calculate words per minute (WPM)
-                wpm = int((user_words / elapsed_time) * 60)
+            # Calculate words per minute (WPM)
+            wpm = int((user_words / elapsed_time) * 60)
 
-                # Display the calculated WPM
-                self.label_typing_speed.config(text=f"Typing Speed: {wpm} WPM")
+            # Display the calculated WPM
+            self.label_typing_speed.config(text=f"Typing Speed: {wpm} WPM")
 
 if __name__ == "__main__":
     root = tk.Tk()
