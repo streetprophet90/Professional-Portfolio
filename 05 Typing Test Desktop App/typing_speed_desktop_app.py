@@ -36,18 +36,10 @@ class TypingSpeedTestApp:
         self.label_typing_speed.grid(row=3, column=0, columnspan=2, pady=10)
 
     def start_typing(self):
-            #record the start time when the user start typing
-            self.start_time = time()
+        # Record the start time when the user starts typing
+        self.start_time = time()
 
     def calculate_wpm(self):
-        if self.start_time:
-            end_time = time()
-            elapsed_time = end_time - self.start_time
-
-            #count number of words in the sample text 
-            total_words = len(self.sample_text.split())
-
-            #count the number of words the user typed 
         if self.start_time:
             end_time = time()
             elapsed_time = end_time - self.start_time
@@ -68,9 +60,3 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = TypingSpeedTestApp(root)
     root.mainloop()
-
-
-
-
-    
-
