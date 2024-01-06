@@ -47,22 +47,22 @@ class TypingSpeedTestApp:
                 #count number of words in the sample text 
                 total_words = len(self.sample_text.split())
 
-                #count the number of words the user typed     def calculate_wpm(self):
-        if self.start_time:
-            end_time = time()
-            elapsed_time = end_time - self.start_time
+                #count the number of words the user typed 
+            if self.start_time:
+                end_time = time()
+                elapsed_time = end_time - self.start_time
 
-            # Count the number of words in the sample text
-            total_words = len(self.sample_text.split())
+                # Count the number of words in the sample text
+                total_words = len(self.sample_text.split())
 
-            # Count the number of words the user typed
-            user_words = len(self.user_input.get().split())
+                # Count the number of words the user typed
+                user_words = len(self.user_input.get().split())
 
-            # Calculate words per minute (WPM)
-            wpm = int((user_words / elapsed_time) * 60)
+                # Calculate words per minute (WPM)
+                wpm = int((user_words / elapsed_time) * 60)
 
-            # Display the calculated WPM
-            self.label_typing_speed.config(text=f"Typing Speed: {wpm} WPM")
+                # Display the calculated WPM
+                self.label_typing_speed.config(text=f"Typing Speed: {wpm} WPM")
 
 if __name__ == "__main__":
     root = tk.Tk()
