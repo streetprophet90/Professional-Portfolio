@@ -35,7 +35,30 @@ class WatermarkApp:
         # Add Watermark Button
         self.btn_add_watermark = tk.Button(self.root, text="Add Watermark", command=self.add_watermark)
         self.btn_add_watermark.grid(row=2, column=1, pady=20)
-    
+
+        def browse_image(self):
+            file_path = filedialog.askopenfilename(filetypes=[("Image files", "*.png;*.jpg;*.jpeg;*.gif")])
+            self.image_path.set(file_path)
+
+        def add_watermark(self):
+            image_path = self.image_path.get()
+            watermark_text = self.watermark_text.get()
+
+            if image_path and watermark_text:
+                original_image = Image.open(image_path)
+                
+                # Create a copy to avoid modifying the original image
+                watermarked_image = original_image.copy()
+
+                # Add watermark text
+                draw = ImageDraw.Draw(watermarked_image)
+                font = ImageFont.load_default()
+                draw.text((10, 10), watermark_text, font=font, fill=(255, 255, 255, 128))
+
+                # Save or display the watermarked image
+                watermarked_image.save("output_watermarked.jpg")
+                watermarked_image.show()
+        
 
 if __name__ == "__main__":
     root = tk.Tk()
