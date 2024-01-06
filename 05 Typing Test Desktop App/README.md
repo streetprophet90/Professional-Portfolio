@@ -36,12 +36,7 @@ The application displays the sample text, records your typing, and calculates th
 
 ## Note
 
-This is a basic example, and you can customize and extend it based on your preferences. Additional features such as high scores, more text samples, and improvements to the GUI can be implemented with more time and effort.
-```
-
-Feel free to modify the content to better suit your application and add any specific details or instructions that might be helpful for users.
-
-Certainly! Let's go through the key lines of the Typing Speed Test App code:
+## The key lines of the Typing Speed Test App code:
 
 ```python
 import tkinter as tk
