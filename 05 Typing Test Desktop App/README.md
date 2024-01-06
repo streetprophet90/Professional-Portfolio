@@ -155,3 +155,24 @@ class TypingSpeedTestApp:
 25. `wpm = int((user_words / elapsed_time) * 60)`: Calculates words per minute (WPM).
 
 26. `self.label_typing_speed.config(text=f"Typing Speed: {wpm} WPM")`: Updates the label to display the calculated WPM.
+
+The `if __name__ == "__main__":` block in Python is a common pattern used to check whether the Python script is being run directly or if it's being imported as a module into another script. If the script is the main program being run, the block is executed. In this case, it creates an instance of the `TypingSpeedTestApp` class, initializes the Tkinter root window, and starts the main event loop.
+
+Here's an explanation of the lines you provided:
+
+```python
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = TypingSpeedTestApp(root)
+    root.mainloop()
+```
+
+1. `if __name__ == "__main__":`: Checks if the script is being run as the main program.
+
+2. `root = tk.Tk()`: Creates an instance of the Tkinter `Tk` class, which represents the main window of the application.
+
+3. `app = TypingSpeedTestApp(root)`: Creates an instance of the `TypingSpeedTestApp` class, passing the Tkinter root window as an argument.
+
+4. `root.mainloop()`: Starts the Tkinter main event loop, which handles user input and updates the GUI. This line keeps the program running until the user closes the main window.
+
+In summary, when you run this script directly, it creates an instance of the `TypingSpeedTestApp` class, initializes the Tkinter window, and starts the main event loop to run the application. If the script were imported as a module into another script, the code inside the `if __name__ == "__main__":` block would not be executed.
