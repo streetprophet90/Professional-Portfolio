@@ -26,3 +26,35 @@ ball_speed = [5, 5]
 #Initialise the paddle 
 paddle_pos = [WIDTH // 2 - PADDLE_WIDTH // 2, HEIGHT - 30]
 
+#Game Loop
+clock = pygame.time.Clock()
+
+while True:
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            pygame.quit()
+            sys.exit()
+
+    # Move the paddle 
+    keys = pygame.key.get_pressed()
+    if keys[K_LEFT] and paddle_pos[0] > 0:
+        paddle_pos[0] -= 5
+    if keys[K_RIGHT] and paddle_pos[0] < WIDTH - PADDLE_WIDTH:
+        paddle_pos[0] += 5
+
+    #Move the ball
+    ball_pos[0] += ball_speed[0]
+    ball_pos[1] += ball_speed[1]
+
+    #Bounce off the walls
+    if ball_pos[0] <= 0 or ball_pos[0] >= WIDTH - BALL_RADIUS * 2:
+        ball_speed[0] = -ball_speed[0]
+    if ball_pos[1] <= 0:
+        ball_speed[1] = -ball_speed[1]
+
+    #Bounce off the paddle
+    if {
+        paddle_pos[1] <= ball_pos[1] <= paddle_pos[1] + PADDLE_HEIGHT
+        and paddle_pos[0] <= ball_pos[0] <= paddle_pos[0] + PADDLE_WIDTH
+    }:
+        ball_speed[1] = -ball_speed[1]
