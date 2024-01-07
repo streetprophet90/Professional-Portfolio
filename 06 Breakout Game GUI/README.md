@@ -170,4 +170,5 @@ while True:
 
 16. Updates the display and limits the frame rate to 60 frames per second. This helps control the speed of the game.
 
-This code provides a basic structure for a Breakout game using Pygame. You can further enhance it by adding features such as bricks, scoring, levels, and sound effects.
+This code provides a basic structure for a Breakout game using Pygame. A further enhancement shall be done in the forseeable future.
+ Additonal features such as bricks, scoring, levels, and sound effects would be considered
