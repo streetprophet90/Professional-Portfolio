@@ -53,6 +53,106 @@ if elapsed_time > 5:
 ## License
 
 This Dangerous Writing App is provided under the [MIT License](LICENSE).
+
+```
+Feel free to customize the README.md based on any additional details or instructions you want to provide.
 ```
 
-Feel free to customize the README.md based on any additional details or instructions you want to provide.
+# Every Line of Code
+
+```python
+import tkinter as tk
+import threading
+import time
+```
+
+1. `import tkinter as tk`: Imports the Tkinter library and aliases it as `tk` for convenience.
+2. `import threading`: Imports the `threading` module for handling threads.
+3. `import time`: Imports the `time` module for working with time-related functions.
+
+```python
+class DangerousWritingApp:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Dangerous Writing App")
+```
+
+4. Defines a class named `DangerousWritingApp` for the main application. The constructor (`__init__`) initializes the class instance with the root Tkinter window and sets its title.
+
+```python
+        # Variables
+        self.text_content = tk.StringVar()
+        self.last_update_time = time.time()
+```
+
+5. Creates two instance variables (`text_content` and `last_update_time`). `text_content` is a Tkinter `StringVar`, which is not currently used in the code. `last_update_time` is used to store the time of the last user input.
+
+```python
+        # GUI Elements
+        self.create_widgets()
+```
+
+6. Calls the `create_widgets` method to set up the graphical user interface.
+
+```python
+        # Start monitoring for inactivity
+        self.monitor_thread = threading.Thread(target=self.monitor_inactivity)
+        self.monitor_thread.start()
+```
+
+7. Creates a new thread (`monitor_thread`) that executes the `monitor_inactivity` method in the background. This thread is started to monitor user inactivity.
+
+```python
+    def create_widgets(self):
+        # Text Entry
+        self.text_entry = tk.Text(self.root, height=10, width=40)
+        self.text_entry.pack(padx=10, pady=10)
+```
+
+8. Creates a multiline text entry widget (`text_entry`) with a height of 10 lines and width of 40 characters. It is packed within the root window with specified padding.
+
+```python
+        # Start Button
+        self.start_button = tk.Button(self.root, text="Start Writing", command=self.start_writing)
+        self.start_button.pack(pady=10)
+```
+
+9. Creates a button widget (`start_button`) labeled "Start Writing" with the `start_writing` method as its command. The button is packed with a vertical padding of 10.
+
+```python
+    def start_writing(self):
+        self.text_entry.delete("1.0", tk.END)  # Clear the text
+        self.last_update_time = time.time()  # Reset the timer
+```
+
+10. Defines the `start_writing` method, which clears the text content in the `text_entry` widget and resets the `last_update_time` to the current time.
+
+```python
+    def monitor_inactivity(self):
+        while True:
+            current_time = time.time()
+            elapsed_time = current_time - self.last_update_time
+
+            if elapsed_time > 5:  # Adjust the inactivity threshold as needed (5 seconds in this example)
+                self.root.after(0, self.delete_text)
+
+            time.sleep(1)  # Check every second
+```
+
+11. Defines the `monitor_inactivity` method, which runs continuously in a loop. It calculates the elapsed time since the last user input and, if it exceeds 5 seconds, calls the `delete_text` method using `self.root.after` to schedule the deletion. It then sleeps for 1 second before checking again.
+
+```python
+    def delete_text(self):
+        self.text_entry.delete("1.0", tk.END)
+```
+
+12. Defines the `delete_text` method, which deletes all the text content in the `text_entry` widget.
+
+```python
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = DangerousWritingApp(root)
+    root.mainloop()
+```
+
+13. Checks if the script is being run as the main program. If true, it creates a Tkinter root window, initializes an instance of `DangerousWritingApp`, and starts the Tkinter main event loop with `root.mainloop()`.
