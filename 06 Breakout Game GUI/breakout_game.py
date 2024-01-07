@@ -59,10 +59,10 @@ while True:
     }:
         ball_speed[1] = -ball_speed[1]
 
-# Draw everything
-    screen.fill(WHITE)
-    pygame.draw.circle(screen, BLUE, (int(ball_pos[0]), int(ball_pos[1])), BALL_RADIUS)
-    pygame.draw.rect(screen, BLUE, (paddle_pos[0], paddle_pos[1], PADDLE_WIDTH, PADDLE_HEIGHT))
+    # Draw everything
+        screen.fill(WHITE)
+        pygame.draw.circle(screen, BLUE, (int(ball_pos[0]), int(ball_pos[1])), BALL_RADIUS)
+        pygame.draw.rect(screen, BLUE, (paddle_pos[0], paddle_pos[1], PADDLE_WIDTH, PADDLE_HEIGHT))
 
-    pygame.display.flip()
-    clock.tick(60)
+        pygame.display.flip()
+        clock.tick(60)
