@@ -27,12 +27,28 @@ class DangerousWritingApp:
 
         #start button
         self.start_button = tk.Button(self.root, text="Start Writing", command=self.start_writing)
-        self.start_button(pady=10)
+        self.start_button.pack(pady=10)
 
     def start_writing(self):
         self.text_entry.delete("1.0", tk.END) #Clear the text
         self.last_update_time = time.time() #Reset timer
 
     def monitor_inactivity(self):
+        while True:
+            current_time = time.time()
+            elasped_time = current_time - self.last_update_time
+
+            if elasped_time > 5: # Adjust the inactivity threshold as needed (5 seconds in this example)
+                self.root.after(0, self.delete_text)
+            
+            time.sleep(1) #Check every second
+
+    def delete_text(self):
+        self.text_entry.delete("1.0", tk.END)
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = DangerousWritingApp(root)
+    root.mainloop()
         
 
