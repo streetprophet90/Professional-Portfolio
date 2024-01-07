@@ -1,4 +1,4 @@
-```markdown
+
 # Breakout Game
 
 ## Overview
