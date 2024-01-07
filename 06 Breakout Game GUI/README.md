@@ -152,3 +152,22 @@ while True:
         ball_speed[1] = -ball_speed[1]
 ```
 
+14. Implements bouncing off the paddle when the ball comes in contact with it.
+
+```python
+    # Draw everything
+    screen.fill(WHITE)
+    pygame.draw.circle(screen, BLUE, (int(ball_pos[0]), int(ball_pos[1])), BALL_RADIUS)
+    pygame.draw.rect(screen, BLUE, (paddle_pos[0], paddle_pos[1], PADDLE_WIDTH, PADDLE_HEIGHT))
+```
+
+15. Clears the screen and draws the ball and paddle.
+
+```python
+    pygame.display.flip()
+    clock.tick(60)
+```
+
+16. Updates the display and limits the frame rate to 60 frames per second. This helps control the speed of the game.
+
+This code provides a basic structure for a Breakout game using Pygame. You can further enhance it by adding features such as bricks, scoring, levels, and sound effects.
