@@ -28,7 +28,7 @@ python breakout_game.py
 
 ## Customization
 
-Feel free to customize and enhance the game by adding features such as bricks, scoring, levels, and sound effects. The provided code serves as a starting point for creating your own Breakout game in Python.
+A further customization and enhancement of the game shall be done by adding features such as bricks, scoring, levels, and sound effects. The provided code serves as a starting point for creating your own Breakout game in Python.
 
 ## Dependencies
 
@@ -40,9 +40,9 @@ Feel free to customize and enhance the game by adding features such as bricks, s
 This Breakout game implementation is provided under the [MIT License](LICENSE).
 ```
 
-Please note that the template assumes the existence of a file named `breakout_game.py`. Make sure to adjust the file name accordingly if your actual file has a different name.
+Please note that the template assumes the existence of a file named `breakout_game.py`. One should make sure to adjust the file name accordingly if your actual file has a different name.
 
-Certainly! Let's go through the key lines of the Breakout game code:
+## The key lines of the Breakout game code:
 
 ```python
 import pygame
