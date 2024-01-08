@@ -21,6 +21,7 @@ Automatically add watermarks to images with this desktop application, featuring 
 ## Usage Example
 ```bash
 python watermark_app.py
+```
 
 
 ## Key lines of Codes explained 
