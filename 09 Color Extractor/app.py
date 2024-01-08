@@ -21,3 +21,23 @@ def get_top_colors(image_path, num_colors=10):
     top_colors = [(webcolors.rgb_to_hex(color), count) for color, count in most_common]
 
     return top_colors
+
+
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    if request.method == 'POST':
+        # Get the uploaded image
+        file = request.files['file']
+        if file:
+            image_path = "static/uploaded_image.jpg"
+            file.save(image_path)
+
+            # Get the top colors
+            top_colors = get_top_colors(image_path)
+
+            return render_template('result.html', image_path=image_path, top_colors=top_colors)
+
+    return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
