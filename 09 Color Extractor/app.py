@@ -23,7 +23,7 @@ def get_top_colors(image_path, num_colors=10):
     return top_colors
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST']) #flask route for the main page
 def index():
     if request.method == 'POST':
         # Get the uploaded image
