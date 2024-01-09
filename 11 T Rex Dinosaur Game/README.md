@@ -87,3 +87,19 @@ def main():
    - `ImageGrab.grab` captures a portion of the screen specified by the bounding box (300, 340, 600, 400).
    - Adjust the bounding box based on the location of the T-Rex game on your screen.
 
+```python
+        # Convert the image to grayscale to simplify analysis
+        screen_gray = screen.convert('L')
+```
+
+5. **Convert the image to grayscale:**
+   - `convert('L')` converts the color image to grayscale to simplify the analysis.
+   - Grayscale images have a single channel, making it easier to work with pixel values.
+
+```python
+        if is_obstacle(screen):
+            # Jump when an obstacle is detected
+            pyautogui.press('space')
+            print("Jump!")
+```
+
