@@ -119,5 +119,7 @@ if __name__ == "__main__":
     main()
 ```
 
-
+8. **Run the main function if the script is executed:**
+   - Checks if the script is being run as the main program (`__name__ == "__main__"`).
+   - If true, calls the `main` function to start the T-Rex Run Bot.
 
