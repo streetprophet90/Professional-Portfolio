@@ -63,3 +63,17 @@ def is_obstacle(image):
     obstacle_color = (83, 83, 83)  # Color of the obstacle in RGB
     return obstacle_color in image.getdata()
 ```
+
+2. **Define a function to check for obstacles:**
+   - `is_obstacle` is a function that takes an image and checks if the specified obstacle color is present in the image's pixel data.
+
+```python
+def main():
+    print("Starting T-Rex Run Bot in 3 seconds...")
+    time.sleep(3)
+```
+
+3. **Define the main function:**
+   - `main` is the main function of the script.
+   - It prints a starting message and then waits for 3 seconds before entering the game loop.
+
