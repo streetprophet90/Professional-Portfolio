@@ -114,5 +114,10 @@ def main():
 7. **Introduce a delay:**
    - Adds a small delay (0.1 seconds) to control the loop speed.
    - Adjust the delay based on your system's performance.
+```python
+if __name__ == "__main__":
+    main()
+```
+
 
 
