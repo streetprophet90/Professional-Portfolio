@@ -1,4 +1,4 @@
-from http import requests
+import requests
 import PyPDF2
 from io import BytesIO
 
