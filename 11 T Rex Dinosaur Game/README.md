@@ -42,5 +42,24 @@ This script is for educational purposes and should be used responsibly. Respect 
 ## License
 
 This T-Rex Run Bot script is provided under the [MIT License](LICENSE).
+
+
+# Each line of code
+
+```python
+import time
+from PIL import ImageGrab
+import pyautogui
 ```
 
+1. **Import necessary libraries:**
+   - `time`: Provides functions to add delays in the script.
+   - `ImageGrab` from `PIL`: Allows capturing a portion of the screen.
+   - `pyautogui`: Used for controlling the keyboard and mouse.
+
+```python
+def is_obstacle(image):
+    # Check if there is an obstacle on the screen based on pixel color
+    obstacle_color = (83, 83, 83)  # Color of the obstacle in RGB
+    return obstacle_color in image.getdata()
+```
