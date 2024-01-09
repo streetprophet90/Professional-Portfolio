@@ -77,3 +77,13 @@ def main():
    - `main` is the main function of the script.
    - It prints a starting message and then waits for 3 seconds before entering the game loop.
 
+```python
+    while True:
+        # Capture a portion of the screen where the T-Rex game is located
+        screen = ImageGrab.grab(bbox=(300, 340, 600, 400))
+```
+
+4. **Capture a portion of the screen:**
+   - `ImageGrab.grab` captures a portion of the screen specified by the bounding box (300, 340, 600, 400).
+   - Adjust the bounding box based on the location of the T-Rex game on your screen.
+
