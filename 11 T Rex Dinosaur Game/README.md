@@ -103,3 +103,12 @@ def main():
             print("Jump!")
 ```
 
+6. **Check for obstacles and simulate jump:**
+   - Calls the `is_obstacle` function to check if an obstacle is present in the captured screen.
+   - If an obstacle is detected, simulates a jump by pressing the space bar using `pyautogui.press`.
+
+```python
+        # Adjust the delay based on your system's performance
+        time.sleep(0.1)
+```
+
