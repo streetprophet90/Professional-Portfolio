@@ -100,3 +100,14 @@ player_name = []
 player_links = []
 player_team = []
 
+for nba_tag in nba:
+    nba_player = nba_tag.getText()
+    player_name.append(nba_player)
+
+    link = nba_tag.get("href")
+    player_links.append(link)
+
+player_team = [player_team.getText() for player_team in soup.find_all(name="span", class_="LeaderBoardPlayerCard_lbpcTeamAbbr__fGlx3")]
+```
+
+
