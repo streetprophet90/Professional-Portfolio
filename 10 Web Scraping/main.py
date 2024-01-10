@@ -32,11 +32,13 @@ for nba_tag in nba:
     player_links.append(link)
 
 player_team = [player_team.getText() for player_team in soup.find_all(name="span", class_="LeaderBoardPlayerCard_lbpcTeamAbbr__fGlx3")]
+nba_category = [nba_category.getText() for nba_category in soup.find_all(name="h2", class_="LeaderBoardCard_lbcTitle___WI9J")]
 
 
 print(player_name)
 print(player_links)
 print(player_team)
+print(nba_category)
 
 
 
