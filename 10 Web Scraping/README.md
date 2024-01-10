@@ -90,3 +90,13 @@ soup = BeautifulSoup(nba_page, "xml")
 nba = soup.find_all(name="a", class_="Anchor_anchor__cSc3P LeaderBoardPlayerCard_lbpcTableLink__MDNgL")
 stats_heading = soup.find_all(name="h2", class_="LeaderBoardCard_lbcTitle___WI9J")
 ```
+
+4. **Scrape player names and links:**
+   - Uses `soup.find_all` to find all `<a>` tags with specified classes representing player links.
+   - Also finds all `<h2>` tags with a specific class representing statistics headings.
+
+```python
+player_name = []
+player_links = []
+player_team = []
+
