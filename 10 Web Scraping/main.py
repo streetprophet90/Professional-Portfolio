@@ -16,7 +16,9 @@ nba_url = "https://www.nba.com/stats/"
 response = requests.get(nba_url)
 nba_page = response.text
 soup = BeautifulSoup(nba_page, "xml")
-print(soup.title)
 nba_tag = soup.find(name="a", class_="Anchor_anchor__cSc3P LeaderBoardPlayerCard_lbpcTableLink__MDNgL")
-print(nba_tag)
+stats_heading = soup.find(name="h2", class_="LeaderBoardCard_lbcTitle___WI9J")
+stats_text = stats_heading.getText()
+print(stats_text)
+
 
