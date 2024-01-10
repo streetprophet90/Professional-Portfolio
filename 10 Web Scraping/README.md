@@ -123,3 +123,11 @@ print(player_team)
 
 6. **Print the extracted data:**
    - Prints the lists containing player names, links, and team information.
+
+```python
+csv_headers = ['Player', 'Url', 'Team', 'Category']
+with open('results.csv', 'w', newline='', encoding='utf-8') as file:
+    csv_writer = csv.writer(file)
+    csv_writer.writerow(csv_headers)
+```
+7. **creates the csv file to store scraped data:**
