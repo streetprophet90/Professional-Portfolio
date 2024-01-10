@@ -67,3 +67,16 @@ import csv
    - `time`: Provides various time-related functions.
    - `csv`: Used for working with CSV files.
 
+
+```python
+nba_url = "https://www.nba.com/stats/"
+```
+
+2. **Define the NBA website URL:**
+   - Sets the URL of the NBA stats website.
+
+```python
+response = requests.get(nba_url)
+nba_page = response.text
+soup = BeautifulSoup(nba_page, "xml")
+```
