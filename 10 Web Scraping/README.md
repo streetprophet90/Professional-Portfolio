@@ -80,3 +80,13 @@ response = requests.get(nba_url)
 nba_page = response.text
 soup = BeautifulSoup(nba_page, "xml")
 ```
+
+3. **Make an HTTP request and create a BeautifulSoup object:**
+   - Uses `requests.get` to fetch the content of the NBA website.
+   - Converts the response content to text.
+   - Creates a BeautifulSoup object (`soup`) to parse the HTML content.
+
+```python
+nba = soup.find_all(name="a", class_="Anchor_anchor__cSc3P LeaderBoardPlayerCard_lbpcTableLink__MDNgL")
+stats_heading = soup.find_all(name="h2", class_="LeaderBoardCard_lbcTitle___WI9J")
+```
