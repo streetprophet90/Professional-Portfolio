@@ -110,4 +110,15 @@ for nba_tag in nba:
 player_team = [player_team.getText() for player_team in soup.find_all(name="span", class_="LeaderBoardPlayerCard_lbpcTeamAbbr__fGlx3")]
 ```
 
+5. **Loop through player tags and extract information:**
+   - Iterates through each player tag obtained.
+   - Gets the player's name using `getText()` and appends it to the `player_name` list.
+   - Retrieves the player's link using `get("href")` and appends it to the `player_links` list.
+
+```python
+print(player_name)
+print(player_links)
+print(player_team)
+```
+
 
