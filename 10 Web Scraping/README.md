@@ -121,4 +121,5 @@ print(player_links)
 print(player_team)
 ```
 
-
+6. **Print the extracted data:**
+   - Prints the lists containing player names, links, and team information.
