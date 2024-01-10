@@ -49,3 +49,21 @@ Ensure that you download the version compatible with your Chrome browser.
 Adjust the code in the scripts according to the structure of the website you're scraping. Be respectful of the website's resources and policies.
 
 ## Legal and Ethical Consider
+
+# Each Line of code
+
+```python
+import requests
+from bs4 import BeautifulSoup
+from selenium import webdriver
+import time
+import csv
+```
+
+1. **Import necessary libraries:**
+   - `requests`: Used to make HTTP requests.
+   - `BeautifulSoup` from `bs4`: Used for web scraping and parsing HTML.
+   - `webdriver` from `selenium`: Provides a way to automate web browser interaction.
+   - `time`: Provides various time-related functions.
+   - `csv`: Used for working with CSV files.
+
