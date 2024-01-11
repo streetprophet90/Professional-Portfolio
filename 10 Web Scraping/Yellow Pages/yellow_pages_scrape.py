@@ -8,10 +8,6 @@ def find_jobs():
     soup = BeautifulSoup(html_text, 'lxml')
     jobs = soup.find_all("div", class_="hp-grid__item hp-col-sm-6 hp-col-xs-12")
 
-    # csv_headers = ['Company', 'Job Category', 'Date', 'More Info']
-    # with open('results.csv', 'w', newline='', encoding='utf-8') as file:
-    #     csv_writer = csv.writer(file)
-    #     csv_writer.writerow(csv_headers)
 
 
     for job in jobs:
