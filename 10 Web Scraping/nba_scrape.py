@@ -14,9 +14,10 @@ for player in players:
     player_team = player.find('span', 'LeaderBoardPlayerCard_lbpcTeamAbbr__fGlx3').text
 
 
-    print(f'Category: {category} '
-          f'Player: {player_name} '
-          f'Points: {player_points} '
-          f'Team: {player_team}')
+    print(f'Category: {category}')
+    print(f'Player: {player_name}')
+    print (f'Points: {player_points}')
+    print(f'Team: {player_team}')
+    print('')
 
 
