@@ -90,3 +90,9 @@ if __name__ == "__main__":
         time.sleep(time_wait * 60)
 ```
 
+4. **Main script execution:**
+   - If the script is executed directly, it enters an infinite loop.
+   - Calls the `find_jobs` function.
+   - Waits for a specified time (10 minutes in this case) before repeating the process.
+
+The script continuously fetches job listings from the provided website, prints relevant information, and waits for a specified interval before repeating the process. This could be useful for monitoring job listings over time.
