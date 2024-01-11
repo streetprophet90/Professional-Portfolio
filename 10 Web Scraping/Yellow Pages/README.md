@@ -49,3 +49,14 @@ from bs4 import BeautifulSoup
    - `requests`: Allows sending HTTP requests to retrieve web pages.
    - `BeautifulSoup` from `bs4`: Used for web scraping and parsing HTML.
 
+```python
+def find_jobs():
+    html_text = requests.get("https://ghanayellowpages.com/listings/").text
+    soup = BeautifulSoup(html_text, 'lxml')
+    jobs = soup.find_all("div", class_="hp-grid__item hp-col-sm-6 hp-col-xs-12")
+```
+
+2. **Define a function to find jobs:**
+   - Sends an HTTP request to the specified URL and retrieves the HTML content.
+   - Parses the HTML using BeautifulSoup.
+   - Finds all job listings using the specified class.
