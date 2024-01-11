@@ -60,3 +60,19 @@ def find_jobs():
    - Sends an HTTP request to the specified URL and retrieves the HTML content.
    - Parses the HTML using BeautifulSoup.
    - Finds all job listings using the specified class.
+
+
+```python
+    for job in jobs:
+        date_added = job.find('time', class_="hp-listing__created-date hp-listing__date hp-meta").text.replace(',', '')
+        company_name = job.find('h4', class_='hp-listing__title').text
+        category = job.find('div', class_="hp-listing__categories hp-listing__category").text
+        more_info = job.header.a['href']
+
+        print(f"Company Name: {company_name.strip()}")
+        print(f"Job Category: {category.strip()}")
+        print(f"Date: {date_added.strip()[9:]}")
+        print(f'More info: {more_info}')
+        print('')
+```
+
