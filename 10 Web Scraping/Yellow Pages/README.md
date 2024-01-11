@@ -76,3 +76,17 @@ def find_jobs():
         print('')
 ```
 
+3. **Loop through job listings and print information:**
+   - Iterates through each job listing.
+   - Extracts specific information such as company name, job category, date added, and more info.
+   - Prints the extracted information to the console.
+
+```python
+if __name__ == "__main__":
+    while True:
+        find_jobs()
+        time_wait = 10
+        print(f'Waiting {time_wait} minutes... ')
+        time.sleep(time_wait * 60)
+```
+
