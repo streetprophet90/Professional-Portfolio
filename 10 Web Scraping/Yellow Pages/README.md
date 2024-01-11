@@ -35,4 +35,17 @@ This Python script scrapes job listings from the [Ghana Yellow Pages](https://gh
 
 ---
 
-Feel free to customize the README.md further based on additional details or specific instructions you'd like to include.
+
+```python
+import time
+import csv
+import requests
+from bs4 import BeautifulSoup
+```
+
+1. **Import necessary libraries:**
+   - `time`: Provides various time-related functions.
+   - `csv`: Used for working with CSV files.
+   - `requests`: Allows sending HTTP requests to retrieve web pages.
+   - `BeautifulSoup` from `bs4`: Used for web scraping and parsing HTML.
+
