@@ -29,3 +29,15 @@ pip install -r requirements.txt
 python your_script_name.py
 ```
 
+## Script Overview
+
+The script fetches house listings from the [new builds section](https://jiji.com.gh/new-builds) of Jiji.com.gh. It prints information about each listing, including the house name, price, and description.
+
+## Output
+
+The script will print the extracted information to the console:
+
+- House Names
+- Prices
+- Descriptions
+
