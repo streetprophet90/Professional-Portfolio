@@ -30,4 +30,12 @@ for phone in prices:
    Prices.append(phone_prices.strip())
 print(Prices)
 
+location = soup.find_all("p", class_="product__location")
+
+for phone in location:
+   phone_location = phone.text
+   Location.append(phone_location.strip())
+
+print(Location)
+
 
