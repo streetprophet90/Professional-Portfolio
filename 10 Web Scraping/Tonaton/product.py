@@ -38,4 +38,12 @@ for phone in location:
 
 print(Location)
 
+conditions = soup.find_all("div", class_="product__tags flex wrap")
+
+for phone in conditions:
+   phone_conditions = phone.text
+   Condition.append(phone_conditions.strip())
+
+print(Condition)
+
 
