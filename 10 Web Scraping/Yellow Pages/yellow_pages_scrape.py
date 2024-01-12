@@ -2,8 +2,10 @@ import time
 import csv
 import requests
 from bs4 import BeautifulSoup
+import pandas as pd
 
 def find_jobs():
+    global company_name, category, date_added, more_info
     html_text = requests.get("https://ghanayellowpages.com/listings/").text
     soup = BeautifulSoup(html_text, 'lxml')
     jobs = soup.find_all("div", class_="hp-grid__item hp-col-sm-6 hp-col-xs-12")
@@ -31,6 +33,10 @@ def find_jobs():
         print(f"Date: {date_added.strip()[9:]}")
         print(f'More info: {more_info}')
         print('')
+
+    df = pd.DataFrame({"Company": company_name, "Category": category, "Date Added": date_added, "More Info": more_info})
+
+    df.to_csv("Houses.csv")
 
 if __name__ == "__main__":
     while True:
