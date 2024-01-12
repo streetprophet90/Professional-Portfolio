@@ -2,16 +2,20 @@ import time
 import requests
 import csv
 from bs4 import BeautifulSoup
+import pandas as pd
 
-html_text = ("https://jiji.com.gh/new-builds")
-response = requests.get(html_text)
-print(response)
+
 
 House = []
 Prices = []
 Desc = []
 # Location = []
 
+
+
+html_text = ("https://jiji.com.gh/new-builds")
+response = requests.get(html_text)
+print(response)
 soup = BeautifulSoup(response.text, "lxml")
 names = soup.find_all("div", "b-list-advert-base__data")
 
@@ -32,6 +36,10 @@ print(House)
 print(Prices)
 # print(Location)
 print(Desc)
+
+df = pd.DataFrame({"House type": House, "Prices": Prices, "Description": Desc})
+
+df.to_csv("Houses.csv")
 
 
 
