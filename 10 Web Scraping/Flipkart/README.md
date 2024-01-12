@@ -41,3 +41,8 @@ The script will print the extracted information to the console:
 - Prices
 - Descriptions
 
+## Notes
+
+- The script uses `requests` for HTTP requests and `BeautifulSoup` for HTML parsing.
+
+Feel free to customize the script and adapt it according to your needs. If you have any issues or improvements, please [open an issue](https://github.com/your_username/your_repository/issues).
