@@ -7,9 +7,10 @@ from bs4 import BeautifulSoup
 Names = []
 Prices = []
 Location = []
-Condition =[]
+Condition = []
+Links = []
 
-
+home_url = ("https://tonaton.com")
 url = ("https://tonaton.com/c_mobile-phones")
 response = requests.get(url)
 print(response)
@@ -46,4 +47,11 @@ for phone in conditions:
 
 print(Condition)
 
+
+links = soup.find_all("a", class_="product__item flex")
+for phone in links:
+   phone_links = phone.get("href")
+   Links.append(home_url + phone_links)
+
+print(Links)
 
