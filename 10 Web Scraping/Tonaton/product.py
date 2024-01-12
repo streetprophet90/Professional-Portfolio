@@ -16,22 +16,24 @@ response = requests.get(url)
 print(response)
 soup = BeautifulSoup(response.text, "lxml")
 # print(soup)
+box = soup.find("div", class_="product grid wrap")
 
-names = soup.find_all("p", class_="product__description")
+
+names = box.find_all("p", class_="product__description")
 # print(names)
 for phone in names:
    phone_name = phone.text
    Names.append(phone_name.strip())
 print(Names)
 
-prices = soup.find_all("span", class_="product__title")
+prices = box.find_all("span", class_="product__title")
 # print(prices)
 for phone in prices:
    phone_prices = phone.text
    Prices.append(phone_prices.strip())
 print(Prices)
 
-location = soup.find_all("p", class_="product__location")
+location = box.find_all("p", class_="product__location")
 
 for phone in location:
    phone_location = phone.text
@@ -39,7 +41,7 @@ for phone in location:
 
 print(Location)
 
-conditions = soup.find_all("div", class_="product__tags flex wrap")
+conditions = box.find_all("div", class_="product__tags flex wrap")
 
 for phone in conditions:
    phone_conditions = phone.text
@@ -48,10 +50,19 @@ for phone in conditions:
 print(Condition)
 
 
-links = soup.find_all("a", class_="product__item flex")
+links = box.find_all("a", class_="product__item flex")
 for phone in links:
    phone_links = phone.get("href")
    Links.append(home_url + phone_links)
 
 print(Links)
+
+print(len(Links))
+print(len(Condition))
+print(len(Location))
+print(len(Prices))
+print(len(Names))
+
+# df = pd.DataFrame({"Phone Name": Names, "Prices": Prices, "Location": Location, "Phone Condition": Condition, "More Info": Links})
+
 
