@@ -55,3 +55,33 @@ time.sleep(5)
 # when we click on Facebook log in, our browser automatically opens new tab, but our driver is still on first tab
 # so if we want to perform any operation in new window  it will give us error, so we need to change driver from
 # main window to current window.
+
+for tab in driver.window_handles:
+    if tab != main_window:
+        driver.switch_to.window(tab)
+        # to verify that driver has switched to new window
+        print(driver.title)
+time.sleep(3)
+add_email = driver.find_element(By.XPATH, '//*[@id="email"]')
+add_email.send_keys(EMAIL_ID)
+add_password = driver.find_element(By.XPATH, '//*[@id="pass"]')
+add_password.send_keys(PASSWORD)
+add_password.send_keys(Keys.ENTER)
+time.sleep(20)
+# make driver to return to its original window (main tab of browser), so that it can perform functions over there.
+driver.switch_to.window(main_window)
+time.sleep(2)
+# to verify that the driver has switched back to main window
+print(driver.title)
+# allow location
+allow_location = driver.find_element(By.XPATH, '//*[@id="c1146291598"]/div/div/div/div/div[3]/button[1]/span').click()
+time.sleep(2)
+# disallow notification
+disallow_notification = driver.find_element(By.XPATH, '//*[@id="c1146291598"]/div/div/div/div/div[3]/button'
+                                                      '[2]/span').click()
+time.sleep(20)
+# create like button object
+click_like_button = driver.find_element(By.XPATH,
+                                        '//*[@id="c-1420294622"]/div/div[1]/div/main/div[1]/div/div/div[1]'
+                                        '/div[1]/div/div[4]/div/div[4]/button')
+
