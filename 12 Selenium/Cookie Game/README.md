@@ -84,6 +84,27 @@ driver.get("http://orteil.dashnet.org/experiments/cookie/")
 cookie = driver.find_element(By.ID, "cookie")
 ```
 
+3. **Get the cookie element:**
+   - `driver.find_element`: Finds the HTML element using the specified method (`By.ID`) and value ("cookie").
 
+```python
+items = driver.find_elements(By.CSS_SELECTOR, "#store div")
+item_ids = [item.get_attribute("id") for item in items]
+```
+
+4. **Get upgrade item IDs:**
+   - `driver.find_elements`: Finds multiple HTML elements using the specified method (`By.CSS_SELECTOR`) and value ("#store div").
+   - Retrieves the IDs of the upgrade items.
+
+```python
+timeout = time.time() + 5
+five_min = time.time() + 60*5  # 5 minutes
+```
+
+5. **Set up timeouts:**
+   - `timeout`: Time until the next cookie click (initially set to 5 seconds).
+   - `five_min`: Time until the script stops (initially set to 5 minutes).
+
+```python
 
 This script automates the process of clicking on the cookie and purchasing upgrades in the Cookie Clicker game using Selenium.
