@@ -185,6 +185,13 @@ while True:
         driver.find_element(By.ID, to_purchase_id).click()
 ```
 
+14. **Click on the purchased upgrade:**
+    - `driver.find_element`: Finds the upgrade element by ID and clicks on it.
+
+```python
+        timeout = time.time() + 5
+```
+
 
 
 This script automates the process of clicking on the cookie and purchasing upgrades in the Cookie Clicker game using Selenium.
