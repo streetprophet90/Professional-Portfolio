@@ -26,3 +26,10 @@ while True:
         all_prices = driver.find_elements(By.CSS_SELECTOR, "#store b")
         item_prices = []
 
+# Convert <b> text into an integer price.
+        for price in all_prices:
+            element_text = price.text
+            if element_text != "":
+                cost = int(element_text.split("-")[1].strip().replace(",", ""))
+                item_prices.append(cost)
+
