@@ -53,5 +53,37 @@ This script is for educational purposes and should be used responsibly. Respect 
 
 ## License
 
+``` bash
 This Cookie Clicker Bot script is provided under the [MIT License](LICENSE).
 ```
+
+# Lines of code
+```python
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+```
+
+1. **Import necessary libraries:**
+   - `webdriver`: Provides a way to automate web browser interactions (Selenium).
+   - `By`: Defines the mechanisms used to locate elements within a document (Selenium).
+   - `time`: Provides functions to add delays in the script.
+
+```python
+chrome_driver_path = "YOUR CHROME DRIVER PATH"
+driver = webdriver.Chrome(chrome_driver_path)
+driver.get("http://orteil.dashnet.org/experiments/cookie/")
+```
+
+2. **Set up Chrome WebDriver and open the Cookie Clicker game:**
+   - `chrome_driver_path`: Replace with the path to your Chrome WebDriver executable.
+   - `webdriver.Chrome`: Initializes a new instance of the Chrome WebDriver.
+   - `driver.get`: Opens the specified URL (Cookie Clicker game).
+
+```python
+cookie = driver.find_element(By.ID, "cookie")
+```
+
+
+
+This script automates the process of clicking on the cookie and purchasing upgrades in the Cookie Clicker game using Selenium.
