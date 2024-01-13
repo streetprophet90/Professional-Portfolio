@@ -146,5 +146,27 @@ while True:
             cookie_upgrades[item_prices[n]] = item_ids[n]
 ```
 
+10. **Create a dictionary of store items and prices:**
+    - Maps each upgrade price to its corresponding item ID.
+
+```python
+        money_element = driver.find_element(By.ID, "money").text
+        if "," in money_element:
+            money_element = money_element.replace(",", "")
+        cookie_count = int(money_element)
+```
+
+11. **Get current cookie count:**
+    - `driver.find_element`: Finds the element with ID "money" and retrieves the text.
+    - Removes commas from the text and converts it to an integer.
+
+```python
+        affordable_upgrades = {}
+        for cost, id in cookie_upgrades.items():
+            if cookie_count > cost:
+                affordable_upgrades[cost] = id
+```
+
+
 
 This script automates the process of clicking on the cookie and purchasing upgrades in the Cookie Clicker game using Selenium.
