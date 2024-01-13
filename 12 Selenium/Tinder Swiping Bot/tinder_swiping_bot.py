@@ -85,3 +85,27 @@ click_like_button = driver.find_element(By.XPATH,
                                         '//*[@id="c-1420294622"]/div/div[1]/div/main/div[1]/div/div/div[1]'
                                         '/div[1]/div/div[4]/div/div[4]/button')
 
+for i in range(20):
+    try:
+        # like a profile only if it is loaded
+        click_like_button.click()
+
+    except ElementClickInterceptedException:
+        try:
+            # hide pop up (it's a match)
+            hide_its_a_match = driver.find_element(By.XPATH, '//*[@id="c-1089923421"]/div/div/div[1]/div/div'
+                                                             '[4]/button').click()
+        except:
+            # sometimes tinder shows (add to home screen pop up) so we need to click cancel
+            add_tinder_home_screen = driver.find_element(By.XPATH,
+                                                         '//*[@id="c1146291598"]/div/div/div[2]/button[2]/span').click()
+        # wait for two seconds for any of the above two exceptions and then click like button
+        time.sleep(2)
+        click_like_button.click()
+
+    except NoSuchElementException:
+        # if profile is not loaded yet, then wait for 2 more sec
+        time.sleep(3)
+        click_like_button.click()
+
+    time.sleep(7)
