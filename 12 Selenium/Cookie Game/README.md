@@ -192,6 +192,19 @@ while True:
         timeout = time.time() + 5
 ```
 
+15. **Reset the timeout for the next check:**
+    - Adds another 5 seconds until the next check.
 
+```python
+    if time.time() > five_min:
+        cookie_per_s = driver.find_element(By.ID, "cps").text
+        print(cookie_per_s)
+        break
+```
+
+16. **Stop the script after 5 minutes and print CPS:**
+    - Checks if 5 minutes have passed.
+    - Retrieves and prints the "cookies per second" (CPS) count.
+    - Breaks out of the loop to stop the script.
 
 This script automates the process of clicking on the cookie and purchasing upgrades in the Cookie Clicker game using Selenium.
