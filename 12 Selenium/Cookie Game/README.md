@@ -106,5 +106,45 @@ five_min = time.time() + 60*5  # 5 minutes
    - `five_min`: Time until the script stops (initially set to 5 minutes).
 
 ```python
+while True:
+    cookie.click()
+```
+
+6. **Continuous clicking on the cookie:**
+   - Enters a loop that continuously clicks on the cookie.
+
+```python
+    if time.time() > timeout:
+```
+
+7. **Check for upgrades every 5 seconds:**
+   - Executes the code inside the block every 5 seconds.
+
+```python
+        all_prices = driver.find_elements(By.CSS_SELECTOR, "#store b")
+        item_prices = []
+```
+
+8. **Get upgrade prices:**
+   - `driver.find_elements`: Finds multiple HTML elements using the specified method (`By.CSS_SELECTOR`) and value ("#store b").
+   - Retrieves the prices of the upgrades.
+
+```python
+        for price in all_prices:
+            element_text = price.text
+            if element_text != "":
+                cost = int(element_text.split("-")[1].strip().replace(",", ""))
+                item_prices.append(cost)
+```
+
+9. **Convert upgrade prices to integers:**
+   - Parses and converts the prices from text to integers.
+
+```python
+        cookie_upgrades = {}
+        for n in range(len(item_prices)):
+            cookie_upgrades[item_prices[n]] = item_ids[n]
+```
+
 
 This script automates the process of clicking on the cookie and purchasing upgrades in the Cookie Clicker game using Selenium.
