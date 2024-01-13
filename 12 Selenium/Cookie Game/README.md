@@ -167,6 +167,24 @@ while True:
                 affordable_upgrades[cost] = id
 ```
 
+12. **Find affordable upgrades:**
+    - Creates a dictionary of affordable upgrades based on the current cookie count.
+
+```python
+        highest_price_affordable_upgrade = max(affordable_upgrades, key=int)
+        print(highest_price_affordable_upgrade)
+        to_purchase_id = affordable_upgrades[highest_price_affordable_upgrade]
+```
+
+13. **Purchase the most expensive affordable upgrade:**
+    - Finds the highest priced upgrade among the affordable ones.
+    - Prints the price of the purchased upgrade.
+    - Retrieves the ID of the upgrade to purchase.
+
+```python
+        driver.find_element(By.ID, to_purchase_id).click()
+```
+
 
 
 This script automates the process of clicking on the cookie and purchasing upgrades in the Cookie Clicker game using Selenium.
