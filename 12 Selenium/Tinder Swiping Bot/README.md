@@ -34,7 +34,7 @@ Make sure to download the Chrome WebDriver from [here](https://sites.google.com/
 
 1. Run the script:
     ```bash
-    python tinder_automation.py
+    python tinder_swiping_bot.py
     ```
 
 2. The script will automate the login process and start swiping right on Tinder.
