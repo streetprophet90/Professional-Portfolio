@@ -44,3 +44,19 @@ while True:
             money_element = money_element.replace(",", "")
         cookie_count = int(money_element)
 
+# Find upgrades that we can currently afford
+        affordable_upgrades = {}
+        for cost, id in cookie_upgrades.items():
+            if cookie_count > cost:
+                affordable_upgrades[cost] = id
+
+        # Purchase the most expensive affordable upgrade
+        highest_price_affordable_upgrade = max(affordable_upgrades, key=int)
+        print(highest_price_affordable_upgrade)
+        to_purchase_id = affordable_upgrades[highest_price_affordable_upgrade]
+
+        driver.find_element(By.ID, to_purchase_id).click()
+
+        # Add another 5 seconds until the next check
+        timeout = time.time() + 5
+
