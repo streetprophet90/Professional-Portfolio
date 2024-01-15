@@ -32,3 +32,12 @@ Make sure to download the Chrome WebDriver from [here](https://sites.google.com/
   CHROME_DRIVER_PATH = 'YOUR CHROME DRIVER PATH'
   ```
 
+## Usage
+
+1. Run the script:
+    ```bash
+    python complaint_bot.py
+    ```
+
+2. The script will perform a Speedtest, tweet the results to your Internet Service Provider on Twitter, and then exit.
+
