@@ -19,3 +19,21 @@ Ensure you have the necessary libraries installed:
 pip install beautifulsoup4 requests selenium
 ```
 
+Additionally, download the Chrome WebDriver and specify the path in the script:
+
+```python
+# Substitute your own path here 👇
+chrome_driver_path = 'YOUR_PATH_HERE'
+driver = webdriver.Chrome(executable_path=chrome_driver_path)
+```
+
+## Usage
+
+1. Run the script:
+
+   ```bash
+   python real_estate_scraper.py
+   ```
+
+2. Check the Google Form for the populated data.
+
