@@ -37,3 +37,19 @@ driver = webdriver.Chrome(executable_path=chrome_driver_path)
 
 2. Check the Google Form for the populated data.
 
+## Important Notes
+
+- The script assumes the existence of a Google Form with specific input fields. Adjust the XPath values accordingly:
+
+  ```python
+  address = driver.find_element_by_xpath('...your_xpath_here...')
+  price = driver.find_element_by_xpath('...your_xpath_here...')
+  link = driver.find_element_by_xpath('...your_xpath_here...')
+  submit_button = driver.find_element_by_xpath('...your_xpath_here...')
+  ```
+
+- Replace `'URL_TO_YOUR_GOOGLE_FORM'` with the URL of your Google Form.
+
+- The header information (`User-Agent` and `Accept-Language`) in the script mimics a standard browser request. Adjust if necessary.
+
+This script is designed for educational purposes and personal use. Be respectful of the website's terms of service.
