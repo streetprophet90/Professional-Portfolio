@@ -85,6 +85,18 @@ class InternetSpeedTwitterBot:
 
 - Define a class `InternetSpeedTwitterBot` with an initialization method that sets up the Chrome WebDriver and initializes `up` and `down` variables.
 
+```python
+    def get_internet_speed(self):
+        self.driver.get("https://www.speedtest.net/")
+        go_button = self.driver.find_element_by_css_selector(".start-button a")
+        go_button.click()
+        time.sleep(60)
+        self.up = self.driver.find_element_by_xpath('//*[@id="container"]/div/div[3]/div/div/div/div[2]/div[3]/div[3]/div/div[3]/div/div/div[2]/div[1]/div[2]/div/div[2]/span').text
+        self.down = self.driver.find_element_by_xpath('//*[@id="container"]/div/div[3]/div/div/div/div[2]/div[3]/div[3]/div/div[3]/div/div/div[2]/div[1]/div[3]/div/div[2]/span').text
+```
+
+- Define a method `get_internet_speed` within the class to navigate to the Speedtest website, click the "Go" button, wait for the speed test to complete, and fetch the upload and download speeds.
+
 
 
 Please note that this script interacts with real websites and services. Be sure to use it responsibly and in accordance with the terms of service of the respective platforms.
