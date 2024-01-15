@@ -17,6 +17,18 @@ pip install selenium
 
 Make sure to download the Chrome WebDriver from [here](https://sites.google.com/chromium.org/driver/) and provide the path in the script.
 
+## Configuration
 
+- Set up your Twitter credentials:
+  ```python
+  TWITTER_EMAIL = 'YOUR TWITTER EMAIL'
+  TWITTER_PASSWORD = 'YOUR TWITTER PASSWORD'
+  ```
 
+- Set the promised internet speed values and the path to your Chrome WebDriver:
+  ```python
+  PROMISED_DOWN = 150
+  PROMISED_UP = 10
+  CHROME_DRIVER_PATH = 'YOUR CHROME DRIVER PATH'
+  ```
 
