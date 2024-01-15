@@ -58,3 +58,22 @@ This script is for educational purposes and should be used responsibly. Respect 
 This Internet Speed Twitter Bot script is provided under the [MIT License](LICENSE).
 
 
+
+
+```python
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import time
+
+PROMISED_DOWN = 150
+PROMISED_UP = 10
+CHROME_DRIVER_PATH = 'YOUR CHROME DRIVER PATH'
+TWITTER_EMAIL = 'YOUR TWITTER EMAIL'
+TWITTER_PASSWORD = 'YOUR TWITTER PASSWORD'
+```
+
+- Import the necessary modules: `webdriver` from `selenium`, `Keys`, and `time`.
+- Define constants for the promised download and upload speeds, Chrome driver path, Twitter email, and Twitter password.
+
+
+Please note that this script interacts with real websites and services. Be sure to use it responsibly and in accordance with the terms of service of the respective platforms.
