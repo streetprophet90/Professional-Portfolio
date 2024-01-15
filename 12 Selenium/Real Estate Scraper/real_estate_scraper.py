@@ -26,3 +26,20 @@ for link in all_link_elements:
     else:
         all_links.append(href)
 
+all_address_elements = soup.select(".list-card-info address")
+all_addresses = [address.get_text().split(" | ")[-1] for address in all_address_elements]
+
+all_price_elements = soup.select(".list-card-heading")
+all_prices = []
+for element in all_price_elements:
+    # Get the prices. Single and multiple listings have different tag & class structures
+    try:
+        # Price with only one listing
+        price = element.select(".list-card-price")[0].contents[0]
+    except IndexError:
+        print('Multiple listings for the card')
+        # Price with multiple listings
+        price = element.select(".list-card-details li")[0].contents[0]
+    finally:
+        all_prices.append(price)
+
