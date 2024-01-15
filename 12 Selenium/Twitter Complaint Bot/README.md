@@ -97,6 +97,15 @@ class InternetSpeedTwitterBot:
 
 - Define a method `get_internet_speed` within the class to navigate to the Speedtest website, click the "Go" button, wait for the speed test to complete, and fetch the upload and download speeds.
 
+```python
+    def tweet_at_provider(self):
+        self.driver.get("https://twitter.com/login")
+        time.sleep(2)
+        email = self.driver.find_element_by_xpath('//*[@id="react-root"]/div/div/div[2]/main/div/div/div[1]/form/div/div[1]/label/div/div[2]/div/input')
+        password = self.driver.find_element_by_xpath('//*[@id="react-root"]/div/div/div[2]/main/div/div/div[1]/form/div/div[2]/label/div/div[2]/div/input')
+        email.send_keys(TWITTER_EMAIL)
+        password.send_keys(TWITTER_PASSWORD)
+        time.sleep(2)
 
 
 Please note that this script interacts with real websites and services. Be sure to use it responsibly and in accordance with the terms of service of the respective platforms.
