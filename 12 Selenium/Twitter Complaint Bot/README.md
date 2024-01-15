@@ -75,5 +75,16 @@ TWITTER_PASSWORD = 'YOUR TWITTER PASSWORD'
 - Import the necessary modules: `webdriver` from `selenium`, `Keys`, and `time`.
 - Define constants for the promised download and upload speeds, Chrome driver path, Twitter email, and Twitter password.
 
+```python
+class InternetSpeedTwitterBot:
+    def __init__(self, driver_path):
+        self.driver = webdriver.Chrome(executable_path=driver_path)
+        self.up = 0
+        self.down = 0
+```
+
+- Define a class `InternetSpeedTwitterBot` with an initialization method that sets up the Chrome WebDriver and initializes `up` and `down` variables.
+
+
 
 Please note that this script interacts with real websites and services. Be sure to use it responsibly and in accordance with the terms of service of the respective platforms.
