@@ -120,7 +120,20 @@ class InternetSpeedTwitterBot:
         time.sleep(2)
         self.driver.quit()
 
- 
+    bot = InternetSpeedTwitterBot(CHROME_DRIVER_PATH)
+    bot.get_internet_speed()
+    bot.tweet_at_provider()
+```
+
+- Define a method `tweet_at_provider` within the class to log in to Twitter, compose a tweet mentioning the internet speed issues, and send the tweet.
+
+```python
+    bot = InternetSpeedTwitterBot(CHROME_DRIVER_PATH)
+    bot.get_internet_speed()
+    bot.tweet_at_provider()
+```
+
+- Create an instance of `InternetSpeedTwitterBot`, get the internet speed, and tweet at the provider.
 
 
 Please note that this script interacts with real websites and services. Be sure to use it responsibly and in accordance with the terms of service of the respective platforms.
