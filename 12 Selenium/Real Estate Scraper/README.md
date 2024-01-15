@@ -53,3 +53,32 @@ driver = webdriver.Chrome(executable_path=chrome_driver_path)
 - The header information (`User-Agent` and `Accept-Language`) in the script mimics a standard browser request. Adjust if necessary.
 
 This script is designed for educational purposes and personal use. Be respectful of the website's terms of service.
+
+
+
+### Section 1: Import Libraries
+
+```python
+from bs4 import BeautifulSoup
+import requests
+from selenium import webdriver
+import time
+```
+These lines import necessary libraries:
+- `BeautifulSoup`: For parsing HTML content.
+- `requests`: For sending HTTP requests.
+- `webdriver` from `selenium`: For browser automation.
+- `time`: For adding delays.
+
+### Section 2: Set Up Headers
+```python
+header = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36",
+    "Accept-Language": "en-GB,en-US;q=0.9,en;q=0.8"
+}
+```
+This dictionary defines headers for the HTTP request, including the user agent and language.
+
+
+
+Make sure to replace placeholder values and customize the script according to your needs.
