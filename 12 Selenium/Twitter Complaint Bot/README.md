@@ -41,3 +41,20 @@ Make sure to download the Chrome WebDriver from [here](https://sites.google.com/
 
 2. The script will perform a Speedtest, tweet the results to your Internet Service Provider on Twitter, and then exit.
 
+## Script Explanation
+
+- The script uses Selenium to automate the Speedtest website, fetch internet speed values, and tweet them to your Internet Service Provider on Twitter.
+
+- It opens Speedtest, starts the test, waits for the results, and tweets the speed values to the configured Twitter account.
+
+- The Twitter credentials, promised internet speed values, and the Chrome WebDriver path need to be configured.
+
+## Disclaimer
+
+This script is for educational purposes and should be used responsibly. Respect the terms of service of the websites and avoid causing any disruptions.
+
+## License
+
+This Internet Speed Twitter Bot script is provided under the [MIT License](LICENSE).
+
+
