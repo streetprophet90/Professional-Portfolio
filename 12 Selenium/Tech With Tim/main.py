@@ -18,6 +18,7 @@ assert 'Yahoo' in driver.title
 
 elem = driver.find_element(By.NAME, 'p')  # Find the search box
 elem.send_keys('seleniumhq' + Keys.RETURN)
+print(f"Successful: {elem}")
 
 
 
