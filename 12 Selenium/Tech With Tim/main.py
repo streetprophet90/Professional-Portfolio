@@ -24,13 +24,14 @@ link.click()
 # time.sleep(5)
 
 
-try:
-    element = WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.LINK_TEXT, "From basic to advanced. Learn python programming."))
-    )
-finally:
-    time.sleep(300)
-
+# try:
+#     element = WebDriverWait(driver, 10).until(
+#         EC.presence_of_element_located((By.LINK_TEXT, "Programming Tutorials"))
+#     )
+#     element.click()
+# except:
+#     driver.quit()
+driver.back()
 # driver = webdriver.Chrome()
 # driver.get('http://www.yahoo.com')
 # assert 'Yahoo' in driver.title
@@ -45,9 +46,8 @@ finally:
 #     )
 # finally:
 #     time.sleep(5)
-
-
 time.sleep(300)
+
 
 
 
