@@ -105,3 +105,9 @@ for i in range(5000):
     count = int(cookie_count.text.split(" ")[0])
 ```
 
+6. **Automate cookie clicking and count cookies:**
+   - Enters a loop that clicks the big cookie using the defined ActionChains.
+   - Pauses for a short time (0.01 seconds) to simulate a human-like interaction.
+   - Retrieves the current cookie count.
+
+```python
