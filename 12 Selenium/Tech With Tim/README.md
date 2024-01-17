@@ -64,3 +64,13 @@ driver.maximize_window()
 print(driver)
 ```
 
+2. **Initialize Chrome WebDriver and open Cookie Clicker:**
+   - `webdriver.Chrome()`: Initializes a new instance of the Chrome WebDriver.
+   - `driver.get("https://orteil.dashnet.org/cookieclicker/")`: Opens the Cookie Clicker game.
+   - `driver.maximize_window()`: Maximizes the browser window for better visibility.
+   - `print(driver)`: Outputs information about the WebDriver to the console.
+
+```python
+driver.implicitly_wait(5)
+```
+
