@@ -40,3 +40,14 @@ python cookie_game.py
 ## Notes
 
 - This script serves as a simple automation example and may need adjustments based on the game's updates.
+
+
+
+
+```python
+from selenium import webdriver
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.by import By
+import time
+```
+
