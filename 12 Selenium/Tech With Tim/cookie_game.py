@@ -23,8 +23,6 @@ items = [driver.find_element(By.ID, "productPrice" + str(i)) for i in range(1, -
 actions = ActionChains(driver)
 actions.click(cookie)
 
-# for i in range(5000):
-#     actions.perform()
 
 for i in range(5000):
     actions.click(cookie).perform()
