@@ -85,3 +85,12 @@ cookie_count = driver.find_element(By.ID, "cookies")
 items = [driver.find_element(By.ID, "productPrice" + str(i)) for i in range(1, -1, -1)]
 ```
 
+4. **Locate elements on the page:**
+   - `driver.find_element`: Finds individual elements using the specified method (`By.ID`) and value.
+   - `items`: Retrieves a list of upgrade elements using a list comprehension.
+
+```python
+actions = ActionChains(driver)
+actions.click(cookie)
+```
+
