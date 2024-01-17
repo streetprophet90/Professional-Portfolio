@@ -74,3 +74,14 @@ print(driver)
 driver.implicitly_wait(5)
 ```
 
+3. **Implicitly wait for elements to load:**
+   - `driver.implicitly_wait(5)`: Sets an implicit wait time of 5 seconds, allowing elements to load before interacting with them.
+
+```python
+language = driver.find_element(By.ID, "langSelect-EN")
+language.click()
+cookie = driver.find_element(By.ID, "bigCookie")
+cookie_count = driver.find_element(By.ID, "cookies")
+items = [driver.find_element(By.ID, "productPrice" + str(i)) for i in range(1, -1, -1)]
+```
+
