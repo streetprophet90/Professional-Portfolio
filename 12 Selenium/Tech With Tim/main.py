@@ -32,6 +32,7 @@ link.click()
 # except:
 #     driver.quit()
 driver.back()
+driver.forward()
 # driver = webdriver.Chrome()
 # driver.get('http://www.yahoo.com')
 # assert 'Yahoo' in driver.title
