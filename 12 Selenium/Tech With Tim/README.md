@@ -51,3 +51,16 @@ from selenium.webdriver.common.by import By
 import time
 ```
 
+1. **Import necessary libraries:**
+   - `webdriver`: Provides a way to automate web browser interactions (Selenium).
+   - `ActionChains`: Allows for performing complex input actions (e.g., mouse movements, clicks).
+   - `By`: Defines the mechanisms used to locate elements within a document (Selenium).
+   - `time`: Provides functions to add delays in the script.
+
+```python
+driver = webdriver.Chrome()
+driver.get("https://orteil.dashnet.org/cookieclicker/")
+driver.maximize_window()
+print(driver)
+```
+
