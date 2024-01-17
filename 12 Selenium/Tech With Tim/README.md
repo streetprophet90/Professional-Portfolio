@@ -94,3 +94,14 @@ actions = ActionChains(driver)
 actions.click(cookie)
 ```
 
+5. **Create ActionChains for clicking the big cookie:**
+   - `ActionChains(driver)`: Initializes a series of user actions.
+   - `actions.click(cookie)`: Adds a click action on the big cookie element to the series.
+
+```python
+for i in range(5000):
+    actions.click(cookie).perform()
+    time.sleep(0.01)
+    count = int(cookie_count.text.split(" ")[0])
+```
+
