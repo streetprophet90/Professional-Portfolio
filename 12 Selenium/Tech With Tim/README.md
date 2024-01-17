@@ -125,3 +125,11 @@ for item in items:
    - Checks if the item's cost is less than or equal to the current cookie count.
    - If true, creates a new set of ActionChains to move to and click on the upgrade.
 
+```python
+time.sleep(300)
+```
+
+8. **Run the script for a fixed duration:**
+   - Pauses the script for 300 seconds (5 minutes) to allow the game to run with automated clicking and purchasing upgrades.
+
+This script demonstrates basic automation of the Cookie Clicker game using Selenium WebDriver and ActionChains.
