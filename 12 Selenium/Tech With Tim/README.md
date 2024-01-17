@@ -111,3 +111,12 @@ for i in range(5000):
    - Retrieves the current cookie count.
 
 ```python
+for item in items:
+    value = int(item.text)
+    if value <= count:
+        upgrade_actions = ActionChains(driver)
+        upgrade_actions.move_to_element(item)
+        upgrade_actions.click()
+        upgrade_actions.perform()
+```
+
