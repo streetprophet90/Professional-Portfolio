@@ -120,3 +120,8 @@ for item in items:
         upgrade_actions.perform()
 ```
 
+7. **Purchase available upgrades:**
+   - Iterates through the list of upgrade items.
+   - Checks if the item's cost is less than or equal to the current cookie count.
+   - If true, creates a new set of ActionChains to move to and click on the upgrade.
+
