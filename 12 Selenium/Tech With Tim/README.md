@@ -124,12 +124,26 @@ for item in items:
    - Iterates through the list of upgrade items.
    - Checks if the item's cost is less than or equal to the current cookie count.
    - If true, creates a new set of ActionChains to move to and click on the upgrade.
+8.  
+
+Here's a brief explanation of the code:
+
+1. The outer loop (`for i in range(5000):`) performs 5000 clicks on the cookie.
+2. After each click, there's a small delay (`time.sleep(0.01)`) to allow the game to register the click.
+3. The `cookie_count` element is used to get the current count of cookies.
+4. The inner loop iterates through the `items` list, which contains upgrade elements.
+5. For each upgrade element, it checks if the upgrade cost is less than or equal to the current cookie count.
+6. If so, it performs an action chain to move to the upgrade element and click it.
+
+Make sure that the element locators for `cookie` and `cookie_count` are correctly defined in your code, and the IDs 
+match the actual elements on the Cookie Clicker game page.
+
 
 ```python
 time.sleep(300)
 ```
 
-8. **Run the script for a fixed duration:**
+9. **Run the script for a fixed duration:**
    - Pauses the script for 300 seconds (5 minutes) to allow the game to run with automated clicking and purchasing upgrades.
 
 This script demonstrates basic automation of the Cookie Clicker game using Selenium WebDriver and ActionChains.
