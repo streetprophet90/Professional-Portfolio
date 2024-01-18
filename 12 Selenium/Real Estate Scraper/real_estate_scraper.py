@@ -66,3 +66,4 @@ for n in range(len(all_links)):
     price.send_keys(all_prices[n])
     link.send_keys(all_links[n])
     submit_button.click()
+

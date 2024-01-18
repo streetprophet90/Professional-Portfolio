@@ -29,6 +29,7 @@ link.click()
 #         EC.presence_of_element_located((By.LINK_TEXT, "Programming Tutorials"))
 #     )
 #     element.click()
+#     element.clear()
 # except:
 #     driver.quit()
 driver.back()
