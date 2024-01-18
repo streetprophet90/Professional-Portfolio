@@ -5,8 +5,8 @@ class BasePage(object):
 class MainPage(BasePage):
 
     def is_title_matches(self):
-        return "Python" in self.driver.title
+        return "Python" in self.driver.title #after this go to main.py to write some code_1
 
     def click_go_button(self):
         element = self.driver.find_element()
-        element.click()
+        element.click()  #after this go to locator.py to write some code_1
