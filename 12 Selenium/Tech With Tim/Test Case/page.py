@@ -13,6 +13,9 @@ class BasePage(object):
         self.driver = driver
 
 class MainPage(BasePage):
+    """Home page action methods come here. I.e. Python.org"""
+    # Declares a variable that will contain the retrieved text
+    search_text_element = SearchTextElement()
 
     def is_title_matches(self):
         return "Python" in self.driver.title #after this go to main.py to write some code_1
