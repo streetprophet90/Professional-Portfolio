@@ -1,3 +1,5 @@
+from locator import *
+
 class BasePage(object):
     def __init__(self, driver):
         self.driver = driver
@@ -8,5 +10,5 @@ class MainPage(BasePage):
         return "Python" in self.driver.title #after this go to main.py to write some code_1
 
     def click_go_button(self):
-        element = self.driver.find_element()
+        element = self.driver.find_element(*MainPageLocators.GO_BUTTON)
         element.click()  #after this go to locator.py to write some code_1
