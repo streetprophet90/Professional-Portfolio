@@ -12,3 +12,8 @@ class MainPage(BasePage):
     def click_go_button(self):
         element = self.driver.find_element(*MainPageLocators.GO_BUTTON)
         element.click()  #after this go to locator.py to write some code_1
+
+class SearchResultsPage(BasePage):
+
+    def is_results_found(self):
+        return "No results found." not in self.driver.page_source
