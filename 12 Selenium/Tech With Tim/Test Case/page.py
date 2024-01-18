@@ -1,4 +1,12 @@
 from locator import *
+from element import BasePageElement
+
+
+class SearchTextElement(BasePageElement):
+    """This class gets the search text from the specified locator"""
+    #The locator for search box where search string is entered
+    locator = 'q'
+
 
 class BasePage(object):
     def __init__(self, driver):
