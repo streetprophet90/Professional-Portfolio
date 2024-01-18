@@ -9,3 +9,5 @@ class PythonOrgSearch(unittest.TestCase):
         self.driver.get("http://www.python.org")
 
 
+    def TearDown(self):
+        self.driver.close()
