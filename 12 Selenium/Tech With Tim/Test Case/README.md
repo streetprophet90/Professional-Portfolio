@@ -224,3 +224,12 @@ Now, let's go into more detail for the methods in each class.
   - `obj`: The object instance.
   - `owner`: The owner class.
 
+#### `MainPage` (page.py)
+
+```python
+    def is_title_matches(self):
+        return "Python" in self.driver.title
+```
+
+- `is_title_matches` method checks if the word "Python" is in the page title.
+
