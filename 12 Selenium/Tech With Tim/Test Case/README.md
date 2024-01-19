@@ -118,3 +118,22 @@ class BasePageElement(object):
         # ... (explained below)
 ```
 
+3. Define a method (`__set__`) to set the text of an element to a specified value.
+
+```python
+    def __get__(self, obj, owner):
+        # ... (explained below)
+```
+
+4. Define a method (`__get__`) to get the text of the specified object.
+
+### `page.py`
+
+```python
+from locator import *
+from element import BasePageElement
+
+class SearchTextElement(BasePageElement):
+    # ... (explained below)
+```
+
