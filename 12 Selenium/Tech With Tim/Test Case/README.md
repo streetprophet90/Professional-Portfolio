@@ -196,3 +196,18 @@ class SearchResultsPage(BasePage):
 
 Now, let's go into more detail for the methods in each class.
 
+#### `BasePageElement` (element.py)
+
+```python
+    def __set__(self, obj, value):
+        driver = obj.driver
+        WebDriverWait(driver, 100).until(
+            lambda driver: driver.find_element(By.NAME, self.locator))
+        driver.find_element(By.NAME, self.locator).clear()
+        driver.find_element(By.NAME, self.locator).send_keys(value)
+```
+
+- `__set__` method sets the text of an element to the specified value.
+  - `obj`: The object instance.
+  - `value`: The value to set.
+
