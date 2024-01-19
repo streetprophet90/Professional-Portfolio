@@ -178,3 +178,10 @@ class MainPage(BasePage):
         # ... (explained below)
 ```
 
+7. Define a method (`click_go_button`) to click the "Submit" button.
+
+```python
+class SearchResultsPage(BasePage):
+    # ... (explained below)
+```
+
