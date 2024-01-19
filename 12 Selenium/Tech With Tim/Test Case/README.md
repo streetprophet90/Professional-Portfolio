@@ -104,3 +104,17 @@ class BasePageElement(object):
     # ... (explained below)
 ```
 
+1. Import `WebDriverWait` and `By` from Selenium.
+
+```python
+    def __init__(self):
+        self.locator = None
+```
+
+2. Initialize the `BasePageElement` class with a `locator` attribute.
+
+```python
+    def __set__(self, obj, value):
+        # ... (explained below)
+```
+
