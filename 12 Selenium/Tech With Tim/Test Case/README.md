@@ -211,3 +211,16 @@ Now, let's go into more detail for the methods in each class.
   - `obj`: The object instance.
   - `value`: The value to set.
 
+```python
+    def __get__(self, obj, owner):
+        driver = obj.driver
+        WebDriverWait(driver, 100).until(
+            lambda driver: driver.find_element(By.NAME, self.locator))
+        element = driver.find_element(By.NAME, self.locator)
+        return element.get_attribute("value")
+```
+
+- `__get__` method gets the text of the specified object.
+  - `obj`: The object instance.
+  - `owner`: The owner class.
+
