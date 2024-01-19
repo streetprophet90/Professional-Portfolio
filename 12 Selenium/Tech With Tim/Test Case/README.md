@@ -233,3 +233,11 @@ Now, let's go into more detail for the methods in each class.
 
 - `is_title_matches` method checks if the word "Python" is in the page title.
 
+```python
+    def click_go_button(self):
+        element = self.driver.find_element(*MainPageLocators.GO_BUTTON)
+        element.click()
+```
+
+- `click_go_button` method clicks the "Submit" button using the defined locator.
+
