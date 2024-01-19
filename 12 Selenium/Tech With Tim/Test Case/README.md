@@ -241,3 +241,13 @@ Now, let's go into more detail for the methods in each class.
 
 - `click_go_button` method clicks the "Submit" button using the defined locator.
 
+#### `SearchResultsPage` (page.py)
+
+```python
+    def is_results_found(self):
+        return "No results found." not in self.driver.page_source
+```
+
+- `is_results_found` method verifies that the results page is not empty.
+
+
