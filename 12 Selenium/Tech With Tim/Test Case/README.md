@@ -35,3 +35,19 @@ To run the automated tests, execute the `main.py` script. The tests will navigat
 
 ---
 
+# Every Line of Code
+
+### `main.py`
+
+```python
+import unittest
+from selenium import webdriver
+import page
+```
+
+1. Import necessary modules for unittest, Selenium, and the `page` module.
+
+```python
+class PythonOrgSearch(unittest.TestCase):
+```
+
