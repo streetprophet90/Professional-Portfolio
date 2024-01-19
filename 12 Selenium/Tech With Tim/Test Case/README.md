@@ -151,3 +151,16 @@ class BasePage(object):
         # ... (explained below)
 ```
 
+3. Define a `BasePage` class with an initialization method.
+
+```python
+class MainPage(BasePage):
+    # ... (explained below)
+```
+
+4. Define a `MainPage` class that inherits from `BasePage`.
+
+```python
+    search_text_element = SearchTextElement()
+```
+
