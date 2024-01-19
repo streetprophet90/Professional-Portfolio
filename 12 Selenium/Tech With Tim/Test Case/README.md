@@ -137,3 +137,17 @@ class SearchTextElement(BasePageElement):
     # ... (explained below)
 ```
 
+1. Import classes from `locator` and `element`.
+
+```python
+    locator = 'q'
+```
+
+2. Set the `locator` attribute for `SearchTextElement` to 'q'.
+
+```python
+class BasePage(object):
+    def __init__(self, driver):
+        # ... (explained below)
+```
+
