@@ -82,3 +82,15 @@ if __name__ == "__main__":
 
 6. Check if the script is executed directly and run the unittest.
 
+### `locator.py`
+
+```python
+from selenium.webdriver.common.by import By
+
+class MainPageLocators(object):
+    GO_BUTTON = (By.ID, "submit")
+```
+
+1. Import `By` from `selenium.webdriver.common.by`.
+2. Define a class `MainPageLocators` that contains a tuple `GO_BUTTON` representing the locator for the "Submit" button.
+
