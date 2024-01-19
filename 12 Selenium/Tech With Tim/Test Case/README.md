@@ -66,6 +66,19 @@ class PythonOrgSearch(unittest.TestCase):
         # ... (explained below)
 ```
 
+4. Define a test method (`test_search_in_python_org`) to test the Python.org search feature.
 
+```python
+    def TearDown(self):
+        self.driver.close()
+```
 
+5. Define a teardown method (`TearDown`) that closes the WebDriver after the test is complete.
+
+```python
+if __name__ == "__main__":
+    unittest.main()
+```
+
+6. Check if the script is executed directly and run the unittest.
 
