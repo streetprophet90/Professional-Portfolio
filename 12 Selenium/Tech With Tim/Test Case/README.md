@@ -51,3 +51,21 @@ import page
 class PythonOrgSearch(unittest.TestCase):
 ```
 
+2. Define a test case class named `PythonOrgSearch` that inherits from `unittest.TestCase`.
+
+```python
+    def SetUp(self):
+        self.driver = webdriver.Chrome()
+        self.driver.get("http://www.python.org")
+```
+
+3. Define a setup method (`SetUp`) that initializes a Chrome WebDriver instance and navigates to the Python.org website.
+
+```python
+    def test_search_in_python_org(self):
+        # ... (explained below)
+```
+
+
+
+
