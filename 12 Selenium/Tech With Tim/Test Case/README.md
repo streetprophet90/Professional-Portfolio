@@ -94,3 +94,13 @@ class MainPageLocators(object):
 1. Import `By` from `selenium.webdriver.common.by`.
 2. Define a class `MainPageLocators` that contains a tuple `GO_BUTTON` representing the locator for the "Submit" button.
 
+### `element.py`
+
+```python
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.by import By
+
+class BasePageElement(object):
+    # ... (explained below)
+```
+
