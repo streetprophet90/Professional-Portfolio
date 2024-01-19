@@ -185,3 +185,14 @@ class SearchResultsPage(BasePage):
     # ... (explained below)
 ```
 
+8. Define a `SearchResultsPage` class that inherits from `BasePage`.
+
+```python
+    def is_results_found(self):
+        # ... (explained below)
+```
+
+9. Define a method (`is_results_found`) to verify if search results are found.
+
+Now, let's go into more detail for the methods in each class.
+
