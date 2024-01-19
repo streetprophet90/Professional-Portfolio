@@ -164,3 +164,17 @@ class MainPage(BasePage):
     search_text_element = SearchTextElement()
 ```
 
+5. Declare a variable `search_text_element` of type `SearchTextElement`.
+
+```python
+    def is_title_matches(self):
+        # ... (explained below)
+```
+
+6. Define a method (`is_title_matches`) to check if the word "Python" is in the page title.
+
+```python
+    def click_go_button(self):
+        # ... (explained below)
+```
+
