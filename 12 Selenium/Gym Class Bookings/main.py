@@ -24,3 +24,10 @@ class GymClassBooker:
     def close_browser(self):
         self.driver.quit()
 
+if __name__ == "__main__":
+    #Replace these with your actual gym URL, username, and password
+    gym_url = "Your GYM URL"
+    username = "Your username"
+    password = "Your password"
+
+    gym_booker = GymClassBooker(gym_url, username, password)
