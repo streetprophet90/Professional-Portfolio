@@ -31,3 +31,10 @@ if __name__ == "__main__":
     password = "Your password"
 
     gym_booker = GymClassBooker(gym_url, username, password)
+
+    try:
+        gym_booker.login()
+        #call the book_class method with the specific class details you want to book
+        #Example: gym_booker.book_class("Yoga Class", "2022-01-15", "16:00")
+    finally:
+        gym_booker.close_browser()
