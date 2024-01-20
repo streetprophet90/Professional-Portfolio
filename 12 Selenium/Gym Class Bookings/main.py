@@ -11,3 +11,8 @@ class GymClassBooker:
         self.password = password
         self.driver = webdriver.Chrome()
 
+    def login(self):
+        self.driver.get(self.gym_url)
+        # Implement login logic here (depends on the website structure)
+        # Example: Find username and password fields, input credentials, and click login button
+
