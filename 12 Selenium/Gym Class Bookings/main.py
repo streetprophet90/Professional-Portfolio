@@ -21,3 +21,6 @@ class GymClassBooker:
         # locate the desired class based on its name, date and time
         # click the book button or perform necessary actions to bok the class
 
+    def close_browser(self):
+        self.driver.quit()
+
