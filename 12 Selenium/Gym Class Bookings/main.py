@@ -16,3 +16,8 @@ class GymClassBooker:
         # Implement login logic here (depends on the website structure)
         # Example: Find username and password fields, input credentials, and click login button
 
+    def book_class(self, class_name, date, time):
+        # Navigate to the page where the classes are listed
+        # locate the desired class based on its name, date and time
+        # click the book button or perform necessary actions to bok the class
+
