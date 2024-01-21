@@ -18,6 +18,13 @@ Make sure you have the following installed:
 
    ```
 
+2. **Install Dependencies:**
+   ```bash
+   pip install selenium
+   ```
+
+3. **Configure Script:**
+   Open the script in a text editor and replace the placeholder values with your actual gym URL, username, and password.
 
 
 Note: Make sure to use this script responsibly and in compliance with the terms of service of the gym's website. Automating interactions may violate website policies.
