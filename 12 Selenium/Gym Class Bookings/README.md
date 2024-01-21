@@ -28,7 +28,7 @@ Make sure you have the following installed:
 
 4. **Run the Script:**
    ```bash
-   python gym_class_booker.py
+   python main.py
    ```
    Adjust the `book_class` method call with the specific details of the class you want to book.
 
@@ -47,3 +47,38 @@ The script follows a simple structure:
 - The `__main__` section initializes the `GymClassBooker` class, logs in, books a class (modify the details), and closes the browser afterward.
 
 Note: Make sure to use this script responsibly and in compliance with the terms of service of the gym's website. Automating interactions may violate website policies.
+
+
+
+## Usage
+
+4. Replace the placeholder values in the script with your actual gym URL, username, and password.
+
+```python
+gym_url = "Your GYM URL"
+username = "Your username"
+password = "Your password"
+```
+
+5. Customize the `login` and `book_class` methods based on your gym's website structure. Update the login logic and actions to find and interact with the necessary elements.
+
+```python
+def login(self):
+    # Implement login logic here (depends on the website structure)
+    # Example: Find username and password fields, input credentials, and click login button
+
+def book_class(self, class_name, date, time):
+    # Navigate to the page where the classes are listed
+    # Locate the desired class based on its name, date, and time
+    # Click the book button or perform necessary actions to book the class
+```
+
+6. Save the changes.
+
+7. Run the script.
+
+```bash
+python gym_class_booker.py
+```
+
+Note: Be responsible when automating interactions with websites. Make sure your actions comply with the gym's policies and terms of service. Use the script at your own risk.
