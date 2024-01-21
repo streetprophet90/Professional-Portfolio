@@ -78,7 +78,6 @@ def book_class(self, class_name, date, time):
 7. Run the script.
 
 ```bash
-python gym_class_booker.py
-```
+python main.py
 
 Note: Be responsible when automating interactions with websites. Make sure your actions comply with the gym's policies and terms of service. Use the script at your own risk.
