@@ -24,6 +24,16 @@ Before running the script, make sure you have the following:
     ```bash
     pip install selenium
     ```
+3. Open the `instagram_follower_bot.py` file in a text editor.
+
+4. Replace the placeholder values with your actual ChromeDriver path, Instagram username, and password.
+
+    ```python
+    CHROME_DRIVER_PATH = "YOUR CHROME DRIVER PATH"
+    SIMILAR_ACCOUNT = "buzzfeedtasty"
+    USERNAME = "YOUR INSTAGRAM USERNAME"
+    PASSWORD = "YOUR INSTAGRAM PASSWORD"
+    ```
 
 
 
