@@ -35,6 +35,24 @@ Before running the script, make sure you have the following:
     PASSWORD = "YOUR INSTAGRAM PASSWORD"
     ```
 
+5. Customize the `login`, `find_followers`, and `follow` methods based on your Instagram web interface. Update the login logic and actions to find and interact with the necessary elements.
+
+    ```python
+    def login(self):
+        # Implement login logic here
+        # Example: Find username and password fields, input credentials, and click login button
+
+    def find_followers(self):
+        # Navigate to the page where the followers are listed
+        # Locate the desired elements based on the HTML structure
+
+    def follow(self):
+        # Iterate through the followers and click the follow button
+        # Handle any exceptions that may occur during the process
+    ```
+
+6
+    ```
 
 
 **Note:** Be responsible when automating interactions with websites. Make sure your actions comply with Instagram's policies and terms of service. Use the script at your own risk.
