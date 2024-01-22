@@ -51,7 +51,12 @@ Before running the script, make sure you have the following:
         # Handle any exceptions that may occur during the process
     ```
 
-6
+6. Save the changes.
+
+7. Run the script.
+
+    ```bash
+    python instagram_follower_bot.py
     ```
 
 
