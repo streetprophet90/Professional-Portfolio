@@ -20,3 +20,13 @@ class LibraryBookRenewal:
         # Locate and renew each book
         # Example: Iterate through the list of books and click the renew button for each
 
+        def close_browser(self):
+            self.driver.quit()
+
+
+if __name__ == "__main__":
+    # Replace these with your actual library URL, username, and password
+    library_url = "Your Library URL"
+    username = "Your username"
+    password = "Your password"
+
