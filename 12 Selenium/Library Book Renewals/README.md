@@ -45,3 +45,10 @@ def renew_books(self):
     # Example: Iterate through the list of books and click the renew button for each
 ```
 
+6. Save the changes.
+
+7. Run the script.
+
+```bash
+python library_book_renewal.py
+```
