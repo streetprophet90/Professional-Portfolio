@@ -11,3 +11,10 @@ Before running the script, ensure you have the following installed:
 - [ChromeDriver](https://sites.google.com/chromium.org/driver/) (ensure it's in your system PATH)
 
 
+## Usage
+
+1. Clone the repository to your local machine.
+
+
+2. Install the required packages.
+
