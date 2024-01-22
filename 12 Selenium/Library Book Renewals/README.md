@@ -18,3 +18,17 @@ Before running the script, ensure you have the following installed:
 
 2. Install the required packages.
 
+```bash
+pip install selenium
+```
+
+3. Open the `main.py` file in a text editor.
+
+4. Replace the placeholder values in the script with your actual library URL, username, and password.
+
+```python
+library_url = "Your Library URL"
+username = "Your username"
+password = "Your password"
+```
+
