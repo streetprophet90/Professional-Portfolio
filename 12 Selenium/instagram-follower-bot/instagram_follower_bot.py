@@ -41,3 +41,18 @@ class InstaFollower:
             self.driver.execute_script("arguments[0].scrollTop = arguments[0].scrollHeight", modal)
             time.sleep(2)
 
+    def follow(self):
+        all_buttons = self.driver.find_elements("css selector", "li button")
+        for button in all_buttons:
+            try:
+                button.click()
+                time.sleep(1)
+            except ElementClickInterceptedException:
+                cancel_button = self.driver.find_element("xpath", '/html/body/div[5]/div/div/div/div[3]/button[2]')
+                cancel_button.click()
+
+
+bot = InstaFollower()
+bot.login()
+bot.find_followers()
+bot.follow()
