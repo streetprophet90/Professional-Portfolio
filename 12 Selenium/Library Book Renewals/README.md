@@ -32,3 +32,10 @@ username = "Your username"
 password = "Your password"
 ```
 
+5. Customize the `login` and `renew_books` methods based on your library's website structure. Update the login logic and actions to find and interact with the necessary elements.
+
+```python
+def login(self):
+    # Implement login logic here (depends on the website structure)
+    # Example: Find username and password fields, input credentials, and click login button
+
