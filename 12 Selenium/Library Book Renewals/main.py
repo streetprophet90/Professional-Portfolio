@@ -30,3 +30,11 @@ if __name__ == "__main__":
     username = "Your username"
     password = "Your password"
 
+ library_renewal = LibraryBookRenewal(library_url, username, password)
+
+    try:
+        library_renewal.login()
+        # Call the renew_books method to renew your books
+        # Example: library_renewal.renew_books()
+    finally:
+        library_renewal.close_browser()
