@@ -10,3 +10,8 @@ class LibraryBookRenewal:
         self.password = password
         self.driver = webdriver.Chrome()
 
+   def login(self):
+        self.driver.get(self.library_url)
+        # Implement login logic based on the library's website structure
+        # Example: Find username and password fields, input credentials, and click login button
+
