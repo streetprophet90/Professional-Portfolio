@@ -57,7 +57,17 @@ from art import logo
 - `from art import logo`: Imports ASCII art for the Blackjack game logo, enhancing the user interface.
 
 ```python
+def deal_card():
+    """Returns a random card from the deck"""
+    cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+    card = random.choice(cards)
+    return card
+```
 
+- `deal_card()`: Function to return a random card from the deck. The deck is represented by the `cards` list, and `random.choice(cards)` is used to select a random card.
+
+
+```
 
 - This part initiates a loop to ask the user if they want to play another round. If the user enters 'y,' the console is cleared, and a new game is started by calling `play_game()`.
 
