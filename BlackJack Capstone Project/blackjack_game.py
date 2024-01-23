@@ -85,3 +85,23 @@ def compare(user_score, computer_score):
         return "You lose 😤"
 
 
+def play_game():
+    # print(logo)
+
+    # Hint 5: Deal the user and computer 2 cards each using deal_card() and append().
+    user_cards = []
+    computer_cards = []
+    is_game_over = False
+
+    for _ in range(2):
+        user_cards.append(deal_card())
+        computer_cards.append(deal_card())
+
+    # Hint 11: The score will need to be rechecked with every new card drawn and the checks in Hint 9 need to be repeated until the game ends.
+    while not is_game_over:
+        # Hint 9: Call calculate_score(). If the computer or the user has a blackjack (0) or if the user's score is over 21, then the game ends.
+        user_score = calculate_score(user_cards)
+        computer_score = calculate_score(computer_cards)
+        print(f"  Your cards: {user_cards}, current score: {user_score}")
+        print(f"  Computer's first card: {computer_cards[0]}")
+
