@@ -117,3 +117,18 @@ def play_game():
                 is_game_over = True
 
     # Hint 12: Once the user is done, it's time to let the computer play. The computer should keep drawing cards as long as it has a score less than 17.
+
+    while computer_score != 0 and computer_score < 17:
+        computer_cards.append(deal_card())
+        computer_score = calculate_score(computer_cards)
+
+    print(f"  Your final hand: {user_cards}, final score: {user_score}")
+    print(f"  Computer's final hands: {computer_cards}, final score: {computer_score}")
+    print(compare(user_score, computer_score))
+
+
+# Hint 14: Ask the user if they want to restart the game. If they answer yes, clear the console and start a new game of blackjack and show the logo from art.py.
+
+while input("Do you want to play a game of Blackjack? 'y' or 'n': ") == "y":
+    clear()
+    play_game()
