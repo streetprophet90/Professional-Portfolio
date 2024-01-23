@@ -43,3 +43,22 @@ This Python script implements a simple text-based Blackjack game following certa
 3. Follow the on-screen instructions to play the game.
 
 **Note**: Adjustments may be needed based on user preferences or additional features. The game provides a basic structure that can be expanded or modified as desired.
+
+Sure, let's go through the code and explain each part:
+
+```python
+import random
+from replit import clear
+from art import logo
+```
+
+- `import random`: Imports the `random` module for generating random numbers, which is used for dealing cards.
+- `from replit import clear`: Imports the `clear` function from the `replit` module to clear the console screen between game rounds.
+- `from art import logo`: Imports ASCII art for the Blackjack game logo, enhancing the user interface.
+
+```python
+
+
+- This part initiates a loop to ask the user if they want to play another round. If the user enters 'y,' the console is cleared, and a new game is started by calling `play_game()`.
+
+This script combines functions and game logic to create a simple Blackjack game with a console-based interface. The game flow is controlled by user input, and the logic adheres to the specified Blackjack rules.
