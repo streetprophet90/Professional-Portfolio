@@ -77,6 +77,13 @@ def calculate_score(cards):
     return sum(cards)
 ```
 
+- `calculate_score(cards)`: Function to calculate the score of a hand. It considers special cases like a blackjack (ace + 10) and dynamically adjusts the value of an ace to avoid exceeding 21.
+
+```python
+def compare(user_score, computer_score):
+    # ... (see the provided code for the full implementation)
+```
+
 
 
 - This part initiates a loop to ask the user if they want to play another round. If the user enters 'y,' the console is cleared, and a new game is started by calling `play_game()`.
