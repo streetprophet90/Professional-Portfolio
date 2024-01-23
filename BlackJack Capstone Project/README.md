@@ -66,8 +66,18 @@ def deal_card():
 
 - `deal_card()`: Function to return a random card from the deck. The deck is represented by the `cards` list, and `random.choice(cards)` is used to select a random card.
 
-
+```python
+def calculate_score(cards):  
+    """Take a list of cards and return the score calculated from the cards"""
+    if sum(cards) == 21 and len(cards) == 2:
+        return 0
+    if 11 in cards and sum(cards) > 21:
+        cards.remove(11)
+        cards.append(1)
+    return sum(cards)
 ```
+
+
 
 - This part initiates a loop to ask the user if they want to play another round. If the user enters 'y,' the console is cleared, and a new game is started by calling `play_game()`.
 
