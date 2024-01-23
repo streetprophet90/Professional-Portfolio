@@ -84,7 +84,20 @@ def compare(user_score, computer_score):
     # ... (see the provided code for the full implementation)
 ```
 
+- `compare(user_score, computer_score)`: Function to compare the scores and determine the winner based on different conditions. It covers scenarios such as a draw, blackjack, exceeding 21, and comparing the scores.
 
+```python
+def play_game():
+    # ... (see the provided code for the full implementation)
+```
+
+- `play_game()`: Function to orchestrate the entire game. It initializes player and computer hands, manages player input for drawing cards, calculates scores, and determines the winner. The game loop continues until the user decides not to play again.
+
+```python
+while input("Do you want to play a game of Blackjack? 'y' or 'n': ") == "y":
+    clear() 
+    play_game()
+```
 
 - This part initiates a loop to ask the user if they want to play another round. If the user enters 'y,' the console is cleared, and a new game is started by calling `play_game()`.
 
