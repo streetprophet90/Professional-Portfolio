@@ -129,5 +129,39 @@ scoreboard = Scoreboard()
   - `car_manager`: An instance of the `CarManager` class.
   - `scoreboard`: An instance of the `Scoreboard` class.
 
+```python
+screen.listen()
+screen.onkey(player.go_up, "Up")
+```
 
+- **Event handling:**
+  - `screen.listen()`: Listens for events.
+  - `screen.onkey(player.go_up, "Up")`: Calls `player.go_up` when the "Up" key is pressed.
+
+```python
+game_is_on = True
+while game_is_on:
+    time.sleep(0.1)
+    screen.update()
+```
+
+- **Game loop (`while` loop):**
+  - `time.sleep(0.1)`: Pauses for 0.1 seconds to control the game's speed.
+  - `screen.update()`: Updates the screen manually.
+
+```python
+car_manager.create_car()
+car_manager.move_cars()
+```
+
+- **Car management:**
+  - `car_manager.create_car()`: Creates a new car based on random chance.
+  - `car_manager.move_cars()`: Moves all cars.
+
+```python
+for car in car_manager.all_cars:
+    if car.distance(player) < 20:
+        game_is_on = False
+        scoreboard.game_over()
+```
 
