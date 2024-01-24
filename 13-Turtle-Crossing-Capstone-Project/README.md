@@ -43,3 +43,16 @@ The project is inspired by the Turtle Crossing game from the Python course on [R
    - `Screen`: Class from the Turtle module for creating a graphical window.
    - `Player`, `CarManager`, `Scoreboard`: Custom classes defined in other files.
 
+2. `Screen` setup:
+   - Creates a Turtle graphics window with a width and height of 600 pixels.
+   - `screen.tracer(0)`: Turns off automatic screen updates to speed up animation.
+
+3. Object creation:
+   - `player`: An instance of the `Player` class.
+   - `car_manager`: An instance of the `CarManager` class.
+   - `scoreboard`: An instance of the `Scoreboard` class.
+
+4. Event handling:
+   - `screen.listen()`: Listens for events.
+   - `screen.onkey(player.go_up, "Up")`: Calls `player.go_up` when the "Up" key is pressed.
+
