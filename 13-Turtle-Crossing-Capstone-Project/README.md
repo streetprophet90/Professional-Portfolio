@@ -89,3 +89,45 @@ The project is inspired by the Turtle Crossing game from the Python course on [R
    - Inherits from `Turtle`.
    - Constant: `FONT`.
    - Methods: `__init__`, `update_scoreboard`, `increase_level`, `game_over`.
+
+
+## mMin logic of the Turtle game
+
+### `main.py`
+
+```python
+import time
+from turtle import Screen
+from player import Player
+from car_manager import CarManager
+from scoreboard import Scoreboard
+```
+
+- **Imports:**
+  - `time`: Module providing various time-related functions.
+  - `Screen`: Class from the Turtle module for creating a graphical window.
+  - `Player`, `CarManager`, `Scoreboard`: Custom classes defined in other files.
+
+```python
+screen = Screen()
+screen.setup(width=600, height=600)
+screen.tracer(0)
+```
+
+- **Screen setup:**
+  - Creates a Turtle graphics window with a width and height of 600 pixels.
+  - `screen.tracer(0)`: Turns off automatic screen updates to speed up animation.
+
+```python
+player = Player()
+car_manager = CarManager()
+scoreboard = Scoreboard()
+```
+
+- **Object creation:**
+  - `player`: An instance of the `Player` class.
+  - `car_manager`: An instance of the `CarManager` class.
+  - `scoreboard`: An instance of the `Scoreboard` class.
+
+
+
