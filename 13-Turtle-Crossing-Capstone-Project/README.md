@@ -34,3 +34,12 @@ This Python program implements a simple turtle crossing game using the Turtle gr
 
 ## Attribution
 The project is inspired by the Turtle Crossing game from the Python course on [Replit](https://replit.com/@appbrewery/day-23-4). The code structure and logic are adapted and extended for educational purposes.
+
+
+
+### `main.py`
+1. `import` statements:
+   - `time`: Module providing various time-related functions.
+   - `Screen`: Class from the Turtle module for creating a graphical window.
+   - `Player`, `CarManager`, `Scoreboard`: Custom classes defined in other files.
+
