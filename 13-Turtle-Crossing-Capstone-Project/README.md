@@ -56,3 +56,19 @@ The project is inspired by the Turtle Crossing game from the Python course on [R
    - `screen.listen()`: Listens for events.
    - `screen.onkey(player.go_up, "Up")`: Calls `player.go_up` when the "Up" key is pressed.
 
+5. Game loop (`while` loop):
+   - `time.sleep(0.1)`: Pauses for 0.1 seconds to control the game's speed.
+   - `screen.update()`: Updates the screen manually.
+
+6. Car management:
+   - `car_manager.create_car()`: Creates a new car based on random chance.
+   - `car_manager.move_cars()`: Moves all cars.
+
+7. Collision detection:
+   - Checks if the player collides with any cars. If true, ends the game and displays the game over message.
+
+8. Successful crossing:
+   - Checks if the player has crossed the finish line. If true, resets the player, levels up the car speed, and updates the scoreboard.
+
+9. `screen.exitonclick()`: Closes the window when clicked.
+
