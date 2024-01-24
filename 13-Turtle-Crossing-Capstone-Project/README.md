@@ -72,3 +72,20 @@ The project is inspired by the Turtle Crossing game from the Python course on [R
 
 9. `screen.exitonclick()`: Closes the window when clicked.
 
+### `player.py`
+1. `Player` class:
+   - Inherits from `Turtle`.
+   - Constants: `STARTING_POSITION`, `MOVE_DISTANCE`, `FINISH_LINE_Y`.
+   - Methods: `__init__`, `go_up`, `go_to_start`, `is_at_finish_line`.
+
+### `car_manager.py`
+1. `CarManager` class:
+   - Manages the creation, movement, and leveling up of cars.
+   - Constants: `COLORS`, `STARTING_MOVE_DISTANCE`, `MOVE_INCREMENT`.
+   - Methods: `__init__`, `create_car`, `move_cars`, `level_up`.
+
+### `scoreboard.py`
+1. `Scoreboard` class:
+   - Inherits from `Turtle`.
+   - Constant: `FONT`.
+   - Methods: `__init__`, `update_scoreboard`, `increase_level`, `game_over`.
