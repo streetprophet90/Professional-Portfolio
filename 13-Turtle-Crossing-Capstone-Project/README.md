@@ -165,3 +165,23 @@ for car in car_manager.all_cars:
         scoreboard.game_over()
 ```
 
+- **Collision detection:**
+  - Checks if the player collides with any cars. If true, ends the game and displays the game over message.
+
+```python
+if player.is_at_finish_line():
+    player.go_to_start()
+    car_manager.level_up()
+    scoreboard.increase_level()
+```
+
+- **Successful crossing:**
+  - Checks if the player has crossed the finish line. If true, resets the player, levels up the car speed, and updates the scoreboard.
+
+```python
+screen.exitonclick()
+```
+
+- **Close window:**
+  - `screen.exitonclick()`: Closes the window when clicked.
+
