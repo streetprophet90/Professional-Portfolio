@@ -60,3 +60,36 @@ end_of_game = False
 lives = 6
 ```
 
+- **Explanation**: `end_of_game` is a boolean variable that tracks whether the game is over. `lives` represents the number of lives the player has.
+
+```python
+# Create blanks for the word
+display = ["_" for _ in range(word_length)]
+```
+
+- **Explanation**: The `display` list is initialized with underscores, representing blanks for each letter in the word.
+
+```python
+# Main game loop
+while not end_of_game:
+    guess = input("Guess a letter: ").lower()
+```
+
+- **Explanation**: The game enters a loop where the player is prompted to guess a letter. The guessed letter is converted to lowercase.
+
+```python
+    # Check if the letter has already been guessed
+    if guess in display:
+        print(f"You've already guessed {guess}")
+```
+
+- **Explanation**: Checks if the guessed letter is already in the `display` list, indicating it has been guessed before. If so, a message is printed.
+
+```python
+    # Check guessed letter
+    for position in range(word_length):
+        letter = chosen_word[position]
+        if letter == guess:
+            display[position] = letter
+```
+
