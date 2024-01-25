@@ -121,3 +121,6 @@ while not end_of_game:
         print("You win.")
 ```
 
+- **Explanation**: Checks if there are no more blanks in the `display` list, indicating that the player has correctly guessed the entire word.
+
+This loop continues until `end_of_game` is set to `True`. The player either wins by guessing the word or loses by running out of lives. The game structure involves input handling, checking for correct/incorrect guesses, and updating the display.
