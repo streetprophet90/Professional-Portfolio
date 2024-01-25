@@ -105,3 +105,10 @@ while not end_of_game:
             print("You lose.")
 ```
 
+- **Explanation**: Checks if the guessed letter is not in the chosen word. If so, the player loses a life. If lives reach 0, the game ends.
+
+```python
+    # Display the current state of the word
+    print(f"{' '.join(display)}")
+```
+
