@@ -46,3 +46,17 @@ import random
 
 - **Explanation**: This part imports the required modules. `word_list` and `stages` are lists of words and ASCII art hangman stages, respectively. `logo` is ASCII art for the game's logo. `random` is used to randomly select a word from `word_list`.
 
+```python
+# Randomly choose a word from the word list
+chosen_word = random.choice(word_list)
+word_length = len(chosen_word)
+```
+
+- **Explanation**: The `chosen_word` variable is assigned a random word from `word_list`. `word_length` stores the length of the chosen word.
+
+```python
+# Initialize game variables
+end_of_game = False
+lives = 6
+```
+
