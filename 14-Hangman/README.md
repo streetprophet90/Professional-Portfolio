@@ -112,3 +112,12 @@ while not end_of_game:
     print(f"{' '.join(display)}")
 ```
 
+- **Explanation**: Prints the current state of the word, with blanks and correctly guessed letters.
+
+```python
+    # Check if the player has guessed the entire word
+    if "_" not in display:
+        end_of_game = True
+        print("You win.")
+```
+
