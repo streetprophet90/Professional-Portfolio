@@ -1,10 +1,11 @@
 ### `main.py`
 
-```markdown
+
 # Hangman Game
 
 This is a simple implementation of the classic Hangman game in Python. The game randomly selects a word from a predefined list, and the player needs to guess the word by entering letters. The player starts with 6 lives and loses a life for each incorrect guess. The game ends when the player either correctly guesses the entire word or runs out of lives.
 
+```markdown
 ## How to Play
 
 1. Run the `main.py` file.
