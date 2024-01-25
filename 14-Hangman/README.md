@@ -35,4 +35,14 @@ This file (`hangman_words.py`) contains a list of words used in the Hangman game
 This file (`hangman_art.py`) contains ASCII art representations of the hangman stages and the game logo. The stages are displayed as the player makes incorrect guesses, and the logo is presented at the beginning of the game. Feel free to modify the art or add your own creative elements.
 
 ```
+Sure, let's go through the code in `main.py` line by line:
+
+```python
+# Import necessary modules
+from hangman_words import word_list
+from hangman_art import stages, logo
+import random
+```
+
+- **Explanation**: This part imports the required modules. `word_list` and `stages` are lists of words and ASCII art hangman stages, respectively. `logo` is ASCII art for the game's logo. `random` is used to randomly select a word from `word_list`.
 
