@@ -24,3 +24,12 @@ hard_turns = 5
 
 # Set the number of turns based on the selected level.
 turns_remaining = easy_turns  # Or hard_turns for hard mode.
+
+while turns_remaining > 0:
+    print(f"You have {turns_remaining} attempts remaining to guess the number.")
+
+    try:
+        user_guess = int(input("Guess a number between 1 and 100: "))
+    except ValueError:
+        print("Invalid input. Please enter a valid number.")
+        continue
