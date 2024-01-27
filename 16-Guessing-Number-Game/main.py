@@ -33,3 +33,13 @@ while turns_remaining > 0:
     except ValueError:
         print("Invalid input. Please enter a valid number.")
         continue
+
+    if user_guess == target_number:
+        print(f"Congratulations! You guessed the correct number, which was {target_number}.")
+        break
+    elif user_guess > target_number:
+        print("Too high. Try again.")
+    else:
+        print("Too low. Try again.")
+
+    turns_remaining -= 1
