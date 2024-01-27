@@ -86,3 +86,10 @@ while turns_remaining > 0:
     turns_remaining -= 1
 ```
 
+Explanation:
+- The game runs in a `while` loop as long as there are turns remaining.
+- It prompts the user for input and handles invalid input using a `try-except` block.
+- Compares the user's guess with the target number and provides feedback.
+- Updates `turns_remaining` after each guess.
+
+
