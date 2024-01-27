@@ -28,3 +28,20 @@ This is a simple Number Guessing Game implemented in Python. The game generates 
 2. Run the script in a Python environment.
 
 Enjoy the game and happy guessing!
+
+
+# Every line of code
+
+```python
+# ASCII art logo
+logo = """
+  _____ _     _              _                
+ / ____| |   (_)            (_)               
+| |  __| |__  _ _ __   __ _  _ _ __   __ _  
+| | |_ | '_ \| | '_ \ / _` || | '_ \ / _` | 
+| |__| | | | | | | | | (_| || | | | | (_| | 
+ \_____|_| |_|_|_| |_|\__, ||_|_| |_|\__, | 
+                      __/ |         __/ | 
+                     |___/         |___/  
+"""
+
