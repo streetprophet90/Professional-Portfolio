@@ -92,4 +92,20 @@ Explanation:
 - Compares the user's guess with the target number and provides feedback.
 - Updates `turns_remaining` after each guess.
 
+```python
+if turns_remaining == 0:
+    print(f"Game over. The correct number was {target_number}.")
+
+play_again = input("Do you want to play again? (yes/no): ")
+if play_again.lower() == "yes":
+    target_number = random.randint(1, 100)
+    turns_remaining = easy_turns  # Reset turns for a new game.
+    print("Let's play again!")
+else:
+    print("Thank you for playing!")
+```
+
+Explanation:
+- After the game ends, it checks if there are no turns remaining and provides the correct number if the player couldn't guess it.
+- Asks the user if they want to play again and resets the game parameters for a new round if they choose to continue.
 
