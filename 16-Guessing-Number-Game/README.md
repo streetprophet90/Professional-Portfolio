@@ -59,3 +59,30 @@ hard_turns = 5
 turns_remaining = easy_turns  # Or hard_turns for hard mode.
 ```
 
+Explanation:
+- The script starts with an ASCII art logo and a welcome message.
+- It uses the `random` module to generate a random integer between 1 and 100 as the target number.
+- Different difficulty levels (`easy_turns` and `hard_turns`) are defined with varying numbers of allowed guesses.
+- `turns_remaining` is set based on the selected difficulty level.
+
+```python
+while turns_remaining > 0:
+    print(f"You have {turns_remaining} attempts remaining to guess the number.")
+
+    try:
+        user_guess = int(input("Guess a number between 1 and 100: "))
+    except ValueError:
+        print("Invalid input. Please enter a valid number.")
+        continue
+
+    if user_guess == target_number:
+        print(f"Congratulations! You guessed the correct number, which was {target_number}.")
+        break
+    elif user_guess > target_number:
+        print("Too high. Try again.")
+    else:
+        print("Too low. Try again.")
+
+    turns_remaining -= 1
+```
+
