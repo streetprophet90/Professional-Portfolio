@@ -43,3 +43,15 @@ while turns_remaining > 0:
         print("Too low. Try again.")
 
     turns_remaining -= 1
+
+# Provide feedback when the game ends.
+if turns_remaining == 0:
+    print(f"Game over. The correct number was {target_number}.")
+
+play_again = input("Do you want to play again? (yes/no): ")
+if play_again.lower() == "yes":
+    target_number = random.randint(1, 100)
+    turns_remaining = easy_turns  # Reset turns for a new game.
+    print("Let's play again!")
+else:
+    print("Thank you for playing!")
