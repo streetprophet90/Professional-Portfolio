@@ -318,3 +318,15 @@ def update_scoreboard(self):
 - **Update Scoreboard Method**: Define a method (`update_scoreboard`) for clearing and updating the scoreboard display.
 
 ```python
+def l_point(self):
+    self.l_score += 1
+    self.update_scoreboard()
+
+def r_point(self):
+    self.r_score += 1
+    self.update_scoreboard()
+```
+
+- **Scoring Methods**: Define methods (`l_point` and `r_point`) for incrementing the left and right player scores and updating the scoreboard.
+
+
