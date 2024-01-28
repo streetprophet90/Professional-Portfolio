@@ -139,3 +139,20 @@ import time
 
 - **Imports**: Import necessary modules and classes from Turtle graphics library, including `Screen`, `Turtle`, `Paddle`, `Ball`, and `Scoreboard`.
 
+```python
+screen = Screen()
+screen.bgcolor("black")
+screen.setup(width=800, height=600)
+screen.title("Pong")
+screen.tracer(0)
+```
+
+- **Screen Setup**: Initialize a Turtle screen with specific configurations, such as background color, dimensions, and title. `tracer(0)` turns off automatic screen updates.
+
+```python
+r_paddle = Paddle((350, 0))
+l_paddle = Paddle((-350, 0))
+ball = Ball()
+scoreboard = Scoreboard()
+```
+
