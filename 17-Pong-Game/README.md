@@ -349,4 +349,24 @@ The explanations provided cover the major aspects of each script, but here are a
 - The `Ball` class inherits from the `Turtle` class and represents the ball in the Pong game.
 - The ball has methods for movement (`move`), bouncing off walls or paddles (`bounce_y` and `bounce_x`), and resetting its position (`reset_position`).
 
-x
+### `paddle.py`
+
+- The `Paddle` class inherits from the `Turtle` class and represents a paddle in the Pong game.
+- Paddle movement is defined by the `go_up` and `go_down` methods.
+
+### `ball.py`
+
+- The `Ball` class inherits from the `Turtle` class and represents the ball in the Pong game.
+- The ball has methods for movement (`move`), bouncing off walls or paddles (`bounce_y` and `bounce_x`), and resetting its position (`reset_position`).
+
+### `scoreboard.py`
+
+- The `Scoreboard` class inherits from the `Turtle` class and represents the game's scoreboard.
+- It has methods for updating the scoreboard display (`update_scoreboard`) and incrementing scores (`l_point` and `r_point`).
+
+### General Suggestions:
+
+- Comments: Consider adding comments to the code for better readability, especially for complex logic or specific sections.
+- Documentation: Include a brief description of each script's purpose, classes, and major functions/methods in the README.
+- Potential Improvements: If there are areas for improvement or future enhancements, you can mention them in the README.
+
