@@ -270,3 +270,18 @@ def bounce_x(self):
 - **Bounce Methods**: Define methods (`bounce_y` and `bounce_x`) for bouncing the ball vertically and horizontally.
 
 ```python
+
+def reset_position(self):
+    self.goto(0, 0)
+    self.move_speed = 0.1
+    self.bounce_x()
+```
+
+- **Reset Position Method**: Define a method (`reset_position`) for resetting the ball's position and speed.
+
+### `scoreboard.py`
+
+```python
+from turtle import Turtle
+```
+
