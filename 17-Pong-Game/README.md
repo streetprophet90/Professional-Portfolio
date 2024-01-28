@@ -176,3 +176,25 @@ while game_is_on:
     # ... (collision detection and game logic)
 ```
 
+- **Game Loop**: Start the main game loop. It continuously updates the screen, moves the ball, and checks for collisions and game events.
+
+```python
+screen.exitonclick()
+```
+
+- **Exit on Click**: Close the game window when clicked.
+
+### `paddle.py`
+
+```python
+from turtle import Turtle
+```
+
+- **Import Turtle**: Import the `Turtle` class.
+
+```python
+class Paddle(Turtle):
+```
+
+- **Class Definition**: Define a new class `Paddle` that inherits from `Turtle`.
+
