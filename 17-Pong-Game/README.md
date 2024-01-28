@@ -125,6 +125,17 @@ This module defines the `Scoreboard` class used in the Pong game.
 Create an instance of the `Scoreboard` class in the main script (`main.py`) to keep track of scores.
 
 ```
+# each line of code 
 
+### `main.py`
 
+```python
+from turtle import Screen, Turtle
+from paddle import Paddle
+from ball import Ball
+from scoreboard import Scoreboard
+import time
+```
+
+- **Imports**: Import necessary modules and classes from Turtle graphics library, including `Screen`, `Turtle`, `Paddle`, `Ball`, and `Scoreboard`.
 
