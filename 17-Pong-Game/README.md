@@ -97,4 +97,19 @@ This module defines the `Ball` class used in the Pong game.
 Create an instance of the `Ball` class in the main script (`main.py`) to represent the game ball.
 
 ```
+### `scoreboard.py`
+
+```markdown
+# Pong Game - scoreboard.py
+
+This module defines the `Scoreboard` class used in the Pong game.
+
+## Scoreboard Class
+
+### Methods
+
+- `__init__(self)`: Initializes a scoreboard object with initial attributes.
+- `update_scoreboard(self)`: Clears and updates the scoreboard display.
+- `l_point(self)`: Increments the left player's score.
+- `r_point(self)`: Increments the right player's score.
 
