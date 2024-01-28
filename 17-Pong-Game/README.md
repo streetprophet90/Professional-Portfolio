@@ -330,3 +330,12 @@ def r_point(self):
 - **Scoring Methods**: Define methods (`l_point` and `r_point`) for incrementing the left and right player scores and updating the scoreboard.
 
 
+The explanations provided cover the major aspects of each script, but here are a few additional notes and considerations:
+
+### `main.py`
+
+- The script sets up a Pong game using the Turtle graphics library.
+- Two paddles, a ball, and a scoreboard are created.
+- Paddle movements are controlled by key events.
+- The game loop continuously updates the screen, moves the ball, and checks for collisions and scoring events.
+
