@@ -285,3 +285,24 @@ def reset_position(self):
 from turtle import Turtle
 ```
 
+- **Import Turtle**: Import the `Turtle` class.
+
+```python
+class Scoreboard(Turtle):
+```
+
+- **Class Definition**: Define a new class `Scoreboard` that inherits from `Turtle`.
+
+```python
+def __init__(self):
+    super().__init__()
+    self.color("white")
+    self.penup()
+    self.hideturtle()
+    self.l_score = 0
+    self.r_score = 0
+    self.update_scoreboard()
+```
+
+- **Constructor**: Initialize a new scoreboard with specific attributes, including color, hidden turtle, and initial scores.
+
