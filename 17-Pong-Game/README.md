@@ -68,3 +68,33 @@ Create instances of the `Paddle` class in the main script (`main.py`) to represe
 
 ```
 
+### `ball.py`
+
+```markdown
+# Pong Game - ball.py
+
+This module defines the `Ball` class used in the Pong game.
+
+## Ball Class
+
+### Methods
+
+- `__init__(self)`: Initializes a ball object with initial attributes.
+- `move(self)`: Moves the ball.
+- `bounce_y(self)`: Bounces the ball vertically.
+- `bounce_x(self)`: Bounces the ball horizontally.
+- `reset_position(self)`: Resets the ball's position and speed.
+
+### Attributes
+
+- `color`: White
+- `shape`: Circle
+- `Initial Speed`: x_move = 3, y_move = 3
+- `Initial Move Speed`: 0.1
+
+## Usage
+
+Create an instance of the `Ball` class in the main script (`main.py`) to represent the game ball.
+
+```
+
