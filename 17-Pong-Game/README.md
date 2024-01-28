@@ -156,3 +156,23 @@ ball = Ball()
 scoreboard = Scoreboard()
 ```
 
+- **Object Initialization**: Create instances of `Paddle`, `Ball`, and `Scoreboard` classes.
+
+```python
+screen.listen()
+screen.onkey(r_paddle.go_up, "Up")
+screen.onkey(r_paddle.go_down, "Down")
+screen.onkey(l_paddle.go_up, "w")
+screen.onkey(l_paddle.go_down, "s")
+```
+
+- **Key Event Listeners**: Set up key event listeners for paddle movement using the `listen()` method and `onkey()` method to bind keys to paddle methods.
+
+```python
+game_is_on = True
+while game_is_on:
+    screen.update()
+    ball.move()
+    # ... (collision detection and game logic)
+```
+
