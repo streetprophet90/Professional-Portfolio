@@ -222,3 +222,28 @@ def go_down(self):
 
 - **Movement Methods**: Define methods for moving the paddle up (`go_up`) and down (`go_down`).
 
+### `ball.py`
+
+```python
+from turtle import Turtle
+```
+
+- **Import Turtle**: Import the `Turtle` class.
+
+```python
+class Ball(Turtle):
+```
+
+- **Class Definition**: Define a new class `Ball` that inherits from `Turtle`.
+
+```python
+def __init__(self):
+    super().__init__()
+    self.color("white")
+    self.shape("circle")
+    self.penup()
+    self.x_move = 3
+    self.y_move = 3
+    self.move_speed = 0.1
+```
+
