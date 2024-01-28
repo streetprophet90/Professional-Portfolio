@@ -113,3 +113,18 @@ This module defines the `Scoreboard` class used in the Pong game.
 - `l_point(self)`: Increments the left player's score.
 - `r_point(self)`: Increments the right player's score.
 
+### Attributes
+
+- `color`: White
+- `Font`: Courier, 80, normal
+- `l_score`: Left player's score (initialized to 0)
+- `r_score`: Right player's score (initialized to 0)
+
+## Usage
+
+Create an instance of the `Scoreboard` class in the main script (`main.py`) to keep track of scores.
+
+```
+
+
+
