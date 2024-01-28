@@ -339,3 +339,14 @@ The explanations provided cover the major aspects of each script, but here are a
 - Paddle movements are controlled by key events.
 - The game loop continuously updates the screen, moves the ball, and checks for collisions and scoring events.
 
+### `paddle.py`
+
+- The `Paddle` class inherits from the `Turtle` class and represents a paddle in the Pong game.
+- Paddle movement is defined by the `go_up` and `go_down` methods.
+
+### `ball.py`
+
+- The `Ball` class inherits from the `Turtle` class and represents the ball in the Pong game.
+- The ball has methods for movement (`move`), bouncing off walls or paddles (`bounce_y` and `bounce_x`), and resetting its position (`reset_position`).
+
+x
