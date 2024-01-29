@@ -13,6 +13,8 @@ class Scoreboard(Turtle):
         self.penup()
         self.goto(0, 260)
         self.hideturtle()
+        self.update_scoreboard()
+        self.increase_score()
 
     def update_scoreboard(self):
         self.write(f"Score: {self.score}", align=ALIGNMENT, font=FONT)
