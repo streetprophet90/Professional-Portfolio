@@ -2,7 +2,7 @@
 
 ### `main.py`
 
-```markdown
+
 # The Street Game
 
 This Python script implements a simple Snake game using the Turtle graphics library. The player controls a snake that moves around the screen, consumes food to grow, and must avoid collisions with walls and itself.
@@ -19,10 +19,10 @@ This Python script implements a simple Snake game using the Turtle graphics libr
 ## Usage
 Run the script, and the game window will appear. Use the arrow keys to control the snake. Have fun playing!
 
-```
+
 ### `scoreboard.py`
 
-```markdown
+
 # The Street Game - Scoreboard
 
 This module defines the `Scoreboard` class, responsible for displaying and updating the player's score in the Snake game.
@@ -44,7 +44,7 @@ scoreboard.increase_score()
 
 ### `snake.py`
 
-```markdown
+
 # The Street Game - Snake
 
 This module defines the `Snake` class, which represents the snake in the Snake game.
@@ -70,7 +70,7 @@ snake.move()
 
 ### `food.py`
 
-```markdown
+
 # The Street Game - Food
 
 This module defines the `Food` class, representing the food that the snake consumes to grow in the Snake game.
