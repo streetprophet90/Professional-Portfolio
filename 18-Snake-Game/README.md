@@ -20,4 +20,18 @@ This Python script implements a simple Snake game using the Turtle graphics libr
 Run the script, and the game window will appear. Use the arrow keys to control the snake. Have fun playing!
 
 ```
+### `scoreboard.py`
+
+```markdown
+# The Street Game - Scoreboard
+
+This module defines the `Scoreboard` class, responsible for displaying and updating the player's score in the Snake game.
+
+## Usage
+Create an instance of the `Scoreboard` class and use its methods to update the score during the game.
+
+```python
+scoreboard = Scoreboard()
+scoreboard.increase_score()
+```
 
