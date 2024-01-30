@@ -59,3 +59,14 @@ timer = None
 ```
 - These lines set constants for font name, work, short break, and long break durations. `reps` and `timer` are initialized as global variables.
 
+```python
+def reset_timer():
+    window.after_cancel(timer)
+    canvas.itemconfig(timer_text, text="00:00")
+    title_label.config(text="Timer")
+    check_marks.config(text="")
+    global reps
+    reps = 0
+```
+- This function (`reset_timer`) resets the timer, cancels any ongoing timer events, and resets session-related UI elements.
+
