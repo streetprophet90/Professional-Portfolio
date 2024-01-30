@@ -89,3 +89,24 @@ def start_timer():
         count_down(work_sec)
         title_label.config(text="Work", fg=GREEN)
 ```
+- This function (`start_timer`) handles the logic for starting the timer based on the session count (`reps`). It determines the session type (work, short break, long break) and updates the UI accordingly.
+
+```python
+def count_down(count):
+    count_min = math.floor(count / 60)
+    count_sec = count % 60
+    if count_sec < 10:
+        count_sec = f"0{count_sec}"
+
+    canvas.itemconfig(timer_text, text=f"{count_min}:{count_sec}")
+    if count > 0:
+        global timer
+        timer = window.after(1000, count_down, count - 1)
+    else:
+        start_timer()
+        marks = ""
+        work_sessions = math.floor(reps/2)
+        for _ in range(work_sessions):
+            marks += "✔"
+        check_marks.config(text=marks)
+```
