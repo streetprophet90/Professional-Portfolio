@@ -20,3 +20,7 @@ A simple Pomodoro timer application with a graphical user interface built using 
 - **Short Break:** 5 minutes (Pink color)
 - **Long Break:** 20 minutes (Red color)
 
+## Dependencies
+- Python 3.x
+- Tkinter library
+
