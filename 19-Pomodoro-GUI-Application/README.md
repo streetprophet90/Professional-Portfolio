@@ -47,3 +47,15 @@ RED = "#e7305b"
 GREEN = "#9bdeac"
 YELLOW = "#f7f5dd"
 ```
+- These lines define color constants in hexadecimal format for use in the UI.
+
+```python
+FONT_NAME = "Courier"
+WORK_MIN = 25
+SHORT_BREAK_MIN = 5
+LONG_BREAK_MIN = 20
+reps = 0
+timer = None
+```
+- These lines set constants for font name, work, short break, and long break durations. `reps` and `timer` are initialized as global variables.
+
