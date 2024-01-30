@@ -24,3 +24,11 @@ A simple Pomodoro timer application with a graphical user interface built using 
 - Python 3.x
 - Tkinter library
 
+## Preview
+![Pomodoro Timer](Tomato.jpg)
+
+## Acknowledgments
+- Tomato image by [Pexels](https://www.pexels.com/photo/red-tomato-fruit-on-brown-tree-wooden-branch-190615/)
+
+Feel free to customize this README based on your preferences and any additional information you want to provide.
+```
