@@ -15,3 +15,8 @@ A simple Pomodoro timer application with a graphical user interface built using 
 2. Click the "Start" button to begin the Pomodoro timer.
 3. Click the "Reset" button to stop the timer and reset the session count.
 
+## Timer States
+- **Work Session:** 25 minutes (Green color)
+- **Short Break:** 5 minutes (Pink color)
+- **Long Break:** 20 minutes (Red color)
+
