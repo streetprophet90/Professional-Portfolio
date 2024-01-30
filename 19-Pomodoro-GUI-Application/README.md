@@ -8,3 +8,10 @@ A simple Pomodoro timer application with a graphical user interface built using 
 - Every fourth break is a longer break of 20 minutes.
 - Tracks the number of work sessions completed and displays checkmarks for each completed session.
 - Start and reset buttons to control the timer.
+
+
+## How to Use
+1. Run the script.
+2. Click the "Start" button to begin the Pomodoro timer.
+3. Click the "Reset" button to stop the timer and reset the session count.
+
