@@ -32,5 +32,9 @@ canvas.create_image(100, 112, image=tomato_img)
 timer_text = canvas.create_text(100, 130, text="00:00", fill="white", font=(FONT_NAME, 35, "bold"))
 canvas.grid(column=1, row=1)
 
+check_marks = Label(fg=GREEN, bg=YELLOW)
+check_marks.grid(column=1, row=3)
+
+
 
 window.mainloop()
