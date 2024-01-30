@@ -22,6 +22,15 @@ def reset_timer():
     global reps
     reps = 0
 
+# ---------------------------- TIMER MECHANISM ------------------------------- #
+def start_timer():
+    global reps
+    reps += 1
+
+    work_sec = WORK_MIN * 60
+    short_break_sec = SHORT_BREAK_MIN * 60
+    long_break_sec = LONG_BREAK_MIN * 60
+
 
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
