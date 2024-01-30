@@ -70,3 +70,22 @@ def reset_timer():
 ```
 - This function (`reset_timer`) resets the timer, cancels any ongoing timer events, and resets session-related UI elements.
 
+```python
+def start_timer():
+    global reps
+    reps += 1
+
+    work_sec = WORK_MIN * 60
+    short_break_sec = SHORT_BREAK_MIN * 60
+    long_break_sec = LONG_BREAK_MIN * 60
+
+    if reps % 8 == 0:
+        count_down(long_break_sec)
+        title_label.config(text="Break", fg=RED)
+    elif reps % 2 == 0:
+        count_down(short_break_sec)
+        title_label.config(text="Break", fg=PINK)
+    else:
+        count_down(work_sec)
+        title_label.config(text="Work", fg=GREEN)
+```
