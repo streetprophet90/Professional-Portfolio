@@ -30,5 +30,20 @@ A simple Pomodoro timer application with a graphical user interface built using 
 ## Acknowledgments
 - Tomato image by [Pexels](https://www.pexels.com/photo/red-tomato-fruit-on-brown-tree-wooden-branch-190615/)
 
-Feel free to customize this README based on your preferences and any additional information you want to provide.
+
+
+
+# Every Line of Code
+
+```python
+from tkinter import *
+import math
+```
+- These lines import the necessary modules: `tkinter` for creating the GUI and `math` for mathematical operations.
+
+```python
+PINK = "#e2979c"
+RED = "#e7305b"
+GREEN = "#9bdeac"
+YELLOW = "#f7f5dd"
 ```
