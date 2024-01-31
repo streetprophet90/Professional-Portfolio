@@ -1,0 +1,10 @@
+# Flashy
+
+Flashy is a simple vocabulary flashcard application built using Python's Tkinter library. It helps users learn and memorize new words in a foreign language.
+
+## Features
+
+- **Flashcard Learning**: Flip through flashcards to see the translation of words from one language to another.
+- **Randomized Cards**: Cards are presented in a random order for effective learning.
+- **User Progress**: Track your progress by marking words you have learned.
+
