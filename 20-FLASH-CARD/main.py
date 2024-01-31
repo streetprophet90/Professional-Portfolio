@@ -56,7 +56,11 @@ cross_image = PhotoImage(file="images/wrong.png")
 unknown_button = Button(image=cross_image, highlightthickness=0, command=next_card)
 unknown_button.grid(row=1, column=0)
 
+check_image = PhotoImage(file="images/right.png")
+known_button = Button(image=check_image, highlightthickness=0,  command=is_known)
+known_button.grid(row=1, column=1)
 
+next_card()
 
 window.mainloop()
 
