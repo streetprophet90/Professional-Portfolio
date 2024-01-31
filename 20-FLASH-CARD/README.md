@@ -8,3 +8,9 @@ Flashy is a simple vocabulary flashcard application built using Python's Tkinter
 - **Randomized Cards**: Cards are presented in a random order for effective learning.
 - **User Progress**: Track your progress by marking words you have learned.
 
+## How to Use
+
+1. **Installation**:
+   - Make sure you have Python installed on your machine.
+   - Clone or download this repository.
+
