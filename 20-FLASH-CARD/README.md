@@ -14,3 +14,9 @@ Flashy is a simple vocabulary flashcard application built using Python's Tkinter
    - Make sure you have Python installed on your machine.
    - Clone or download this repository.
 
+2. **Dependencies**:
+   - Install the required dependencies by running `pip install pandas` in your terminal.
+
+3. **Run the Application**:
+   - Execute the script by running `python flashcards.py` in your terminal.
+
