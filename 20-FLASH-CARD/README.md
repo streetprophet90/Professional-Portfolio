@@ -33,3 +33,7 @@ Flashy is a simple vocabulary flashcard application built using Python's Tkinter
 
 
 
+## Credits
+
+- This application uses word data from the [French Words Dataset](data/french_words.csv).
+- Flashcard images: [SVGRepo](https://www.svgrepo.com/)
