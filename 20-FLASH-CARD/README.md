@@ -100,6 +100,13 @@ def is_known():
     next_card()
 ```
 
+Explanation:
+- `next_card()`: Displays the next flashcard on the canvas, cancels any existing flip timer, and starts a new timer for automatic flipping after 3 seconds.
+- `flip_card()`: Flips the flashcard to reveal the English translation.
+- `is_known()`: Removes the current card from the to-learn list, saves the updated list to a CSV file, and shows the next flashcard.
+
+### Block 4: Tkinter GUI Setup
+
 
 
 
