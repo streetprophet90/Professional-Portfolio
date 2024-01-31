@@ -72,6 +72,13 @@ else:
     to_learn = data.to_dict(orient="records")
 ```
 
+Explanation:
+- Attempt to read existing data from a CSV file (`words_to_learn.csv`).
+- If the file is not found, load the original French words dataset (`french_words.csv`) and convert it to a dictionary.
+- If the file is found, convert the data to a dictionary.
+
+### Block 3: Flashcard Functions
+
 
 
 
