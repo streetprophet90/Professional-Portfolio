@@ -37,3 +37,24 @@ Flashy is a simple vocabulary flashcard application built using Python's Tkinter
 
 - This application uses word data from the [French Words Dataset](data/french_words.csv).
 - Flashcard images: [SVGRepo](https://www.svgrepo.com/)
+
+
+
+### Block 1: Importing Libraries and Setting Constants
+
+```python
+# Import required libraries
+from tkinter import *
+import pandas
+import random
+
+# Set background color
+BACKGROUND_COLOR = "#B1DDC6"
+
+# Initialize variables for current card and words to learn
+current_card = {}
+to_learn = {}
+```
+
+
+This application allows users to learn French words interactively through a Tkinter-based flashcard interface. Users can mark words as known or unknown, automatically progress through flashcards, and visualize translations. Images for the front and back of the flashcards are loaded from files, and the flashcard data is managed using pandas.
