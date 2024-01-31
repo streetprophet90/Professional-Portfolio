@@ -27,3 +27,9 @@ Flashy is a simple vocabulary flashcard application built using Python's Tkinter
 5. **Progress**:
    - Your progress is tracked, and words you've learned are saved for future reference.
 
+## Screenshots
+
+![Flashy Screenshot](images/screenshot.png)
+
+
+
