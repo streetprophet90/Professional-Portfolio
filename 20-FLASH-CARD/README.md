@@ -113,6 +113,23 @@ window.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
 
 flip_timer = window.after(3000, func=flip_card)
 
+canvas = Canvas(width=800, height=526)
+# ... (code for loading images and creating canvas items)
+canvas.grid(row=0, column=0, columnspan=2)
+
+cross_image = PhotoImage(file="images/wrong.png")
+unknown_button = Button(image=cross_image, highlightthickness=0, command=next_card)
+unknown_button.grid(row=1, column=0)
+
+check_image = PhotoImage(file="images/right.png")
+known_button = Button(image=check_image, highlightthickness=0,  command=is_known)
+known_button.grid(row=1, column=1)
+
+next_card()
+
+window.mainloop()
+```
+
 
 
 
