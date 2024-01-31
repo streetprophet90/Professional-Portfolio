@@ -20,3 +20,10 @@ Flashy is a simple vocabulary flashcard application built using Python's Tkinter
 3. **Run the Application**:
    - Execute the script by running `python flashcards.py` in your terminal.
 
+4. **Learning**:
+   - Press the "Next" button to see a new flashcard.
+   - Click the checkmark if you know the word, or the "X" if you don't.
+
+5. **Progress**:
+   - Your progress is tracked, and words you've learned are saved for future reference.
+
