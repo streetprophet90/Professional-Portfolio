@@ -56,5 +56,24 @@ current_card = {}
 to_learn = {}
 ```
 
+Explanation:
+- Import necessary libraries, including Tkinter for GUI, pandas for data handling, and random for random selection.
+- Set a constant for the background color and initialize variables for the current flashcard and words to learn.
+
+### Block 2: Loading Data
+
+```python
+try:
+    data = pandas.read_csv("data/words_to_learn.csv")
+except FileNotFoundError:
+    original_data = pandas.read_csv("data/french_words.csv")
+    to_learn = original_data.to_dict(orient="records")
+else:
+    to_learn = data.to_dict(orient="records")
+```
+
+
+
+
 
 This application allows users to learn French words interactively through a Tkinter-based flashcard interface. Users can mark words as known or unknown, automatically progress through flashcards, and visualize translations. Images for the front and back of the flashcards are loaded from files, and the flashcard data is managed using pandas.
