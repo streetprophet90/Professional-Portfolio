@@ -130,7 +130,13 @@ next_card()
 window.mainloop()
 ```
 
-
+Explanation:
+- Create the main Tkinter window with title and specified padding.
+- Set up a timer for automatic card flipping after 3 seconds.
+- Create a canvas for displaying flashcards with specified dimensions and configure background color.
+- Load images for buttons and create buttons for marking words as unknown (`unknown_button`) or known (`known_button`).
+- Show the first flashcard.
+- Start the Tkinter event loop (`window.mainloop()`).
 
 
 
