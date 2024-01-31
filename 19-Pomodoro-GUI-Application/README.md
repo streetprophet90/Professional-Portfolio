@@ -110,3 +110,49 @@ def count_down(count):
             marks += "✔"
         check_marks.config(text=marks)
 ```
+- This function (`count_down`) implements the countdown mechanism. It updates the timer display, continues counting down, and triggers the start of a new session or break when the countdown reaches zero.
+
+```python
+window = Tk()
+window.title("Pomodoro")
+window.config(padx=100, pady=50, bg=YELLOW)
+```
+- These lines create the main Tkinter window, set its title, and configure its padding and background color.
+
+```python
+title_label = Label(text="Timer", fg=GREEN, bg=YELLOW, font=(FONT_NAME, 50))
+title_label.grid(column=1, row=0)
+```
+- This line creates a label (`title_label`) for displaying the timer or break, configures its text, color, font, and position within the grid.
+
+```python
+canvas = Canvas(width=200, height=224, bg=YELLOW, highlightthickness=0)
+tomato_img = PhotoImage(file="Tomato.jpg")
+canvas.create_image(100, 112, image=tomato_img)
+timer_text = canvas.create_text(100, 130, text="00:00", fill="white", font=(FONT_NAME, 35, "bold"))
+canvas.grid(column=1, row=1)
+```
+- These lines create a canvas (`canvas`) for displaying the timer image, timer text, and the tomato image. The canvas is positioned within the grid layout.
+
+```python
+start_button = Button(text="Start", highlightthickness=0, command=start_timer)
+start_button.grid(column=0, row=2)
+```
+- This line creates a button (`start_button`) with the label "Start". It's configured with no border (`highlightthickness=0`) and linked to the `start_timer` function.
+
+```python
+reset_button = Button(text="Reset", highlightthickness=0, command=reset_timer)
+reset_button.grid(column=2, row=2)
+```
+- This line creates a button (`reset_button`) with the label "Reset". It's configured with no border (`highlightthickness=0`) and linked to the `reset_timer` function.
+
+```python
+check_marks = Label(fg=GREEN, bg=YELLOW)
+check_marks.grid(column=1, row=3)
+```
+- This line creates a label (`check_marks`) for displaying checkmarks. It's positioned within the grid and configured with the color.
+
+```python
+window.mainloop()
+```
+- This line starts the Tkinter main loop, allowing the GUI to run and respond to user actions.
