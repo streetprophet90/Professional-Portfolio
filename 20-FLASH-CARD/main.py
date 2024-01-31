@@ -52,3 +52,14 @@ card_word = canvas.create_text(400, 263, text="", font=("Arial", 60, "bold"))
 canvas.config(bg=BACKGROUND_COLOR, highlightthickness=0)
 canvas.grid(row=0, column=0, columnspan=2)
 
+cross_image = PhotoImage(file="images/wrong.png")
+unknown_button = Button(image=cross_image, highlightthickness=0, command=next_card)
+unknown_button.grid(row=1, column=0)
+
+
+
+window.mainloop()
+
+
+
+
