@@ -37,3 +37,9 @@ class FlightSearch:
             params=query,
         )
 
+        try:
+            data = response.json()["data"][0]
+        except IndexError:
+            print(f"No flights found for {destination_city_code}.")
+            return None
+
