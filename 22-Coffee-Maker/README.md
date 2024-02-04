@@ -131,3 +131,21 @@ class MoneyMachine:
     }
 ```
 
+- **MoneyMachine Class**: Models the money machine with currency and coin values.
+
+```python
+    def __init__(self):
+        self.profit = 0
+        self.money_received = 0
+```
+
+- **Initialization**: Initializes profit and money received variables.
+
+```python
+    def report(self):
+        """Prints the current profit"""
+        print(f"Money: {self.CURRENCY}{self.profit}")
+```
+
+- **`report` Method**: Prints the current profit.
+
