@@ -60,3 +60,23 @@ while is_on:
             coffee_maker.make_coffee(drink)
 ```
 
+- **Main Loop**: Continuously prompts the user for input until turned off.
+- **User Input**: Get user input for drink selection or machine actions.
+- **Conditions**: Check user input for turning off the machine or generating reports.
+- **Make Drink**: If a drink is selected, check resources and make the drink if conditions are met.
+
+### `menu.py`
+
+```python
+class MenuItem:
+    """Models each Menu Item."""
+    def __init__(self, name, water, milk, coffee, cost):
+        self.name = name
+        self.cost = cost
+        self.ingredients = {
+            "water": water,
+            "milk": milk,
+            "coffee": coffee
+        }
+```
+
