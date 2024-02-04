@@ -93,3 +93,16 @@ class Menu:
         ]
 ```
 
+- **Menu Class**: Defines a class to model the menu with a list of predefined drinks.
+
+```python
+    def get_items(self):
+        """Returns all the names of the available menu items"""
+        options = ""
+        for item in self.menu:
+            options += f"{item.name}/"
+        return options
+```
+
+- **`get_items` Method**: Returns a string with the names of available menu items.
+
