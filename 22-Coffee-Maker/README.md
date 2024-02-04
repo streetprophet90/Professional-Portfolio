@@ -106,3 +106,28 @@ class Menu:
 
 - **`get_items` Method**: Returns a string with the names of available menu items.
 
+```python
+    def find_drink(self, order_name):
+        """Searches the menu for a particular drink by name. Returns that item if it exists, otherwise returns None"""
+        for item in self.menu:
+            if item.name == order_name:
+                return item
+        print("Sorry that item is not available.")
+```
+
+- **`find_drink` Method**: Searches for a drink by name and returns the item if found.
+
+### `money_machine.py`
+
+```python
+class MoneyMachine:
+    CURRENCY = "$"
+
+    COIN_VALUES = {
+        "quarters": 0.25,
+        "dimes": 0.10,
+        "nickles": 0.05,
+        "pennies": 0.01
+    }
+```
+
