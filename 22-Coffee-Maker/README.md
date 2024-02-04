@@ -28,3 +28,35 @@ from coffee_maker import CoffeeMaker
 from money_machine import MoneyMachine
 ```
 
+- **Imports**: Import necessary classes from other modules (`Menu`, `CoffeeMaker`, `MoneyMachine`).
+
+```python
+money_machine = MoneyMachine()
+coffee_maker = CoffeeMaker()
+menu = Menu()
+```
+
+- **Instances**: Create instances of `MoneyMachine`, `CoffeeMaker`, and `Menu`.
+
+```python
+is_on = True
+```
+
+- **Loop Control**: Initialize a variable `is_on` to control the main loop.
+
+```python
+while is_on:
+    options = menu.get_items()
+    choice = input(f"What would you like? ({options}): ")
+    if choice == "off":
+        is_on = False
+    elif choice == "report":
+        coffee_maker.report()
+        money_machine.report()
+    else:
+        drink = menu.find_drink(choice)
+
+        if coffee_maker.is_resource_sufficient(drink) and money_machine.make_payment(drink.cost):
+            coffee_maker.make_coffee(drink)
+```
+
