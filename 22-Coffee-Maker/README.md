@@ -17,3 +17,14 @@ The `machine_money.py` module defines the `MoneyMachine` class, modeling the mon
 The `coffee_maker.py` module defines the `CoffeeMaker` class, modeling the machine responsible for making coffee. It maintains a dictionary of available resources (water, milk, coffee) and provides methods to report resource levels, check resource sufficiency for a given drink, and make a coffee by deducting the required resources.
 
 These modules collectively create a coffee machine simulation where users can choose drinks, insert coins, and enjoy their beverages. The system ensures proper resource management, handles payments, and maintains a record of profits. The modular design allows for easy extension and maintenance of the coffee machine functionality.
+
+# The code file by file:
+
+### `main.py`
+
+```python
+from menu import Menu
+from coffee_maker import CoffeeMaker
+from money_machine import MoneyMachine
+```
+
