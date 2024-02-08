@@ -188,3 +188,18 @@ This is a simple password manager application built using Python's Tkinter libra
    - Click the "Find" button to search for the saved password.
    - If the password is found, it will be displayed in a message box.
 
+## Requirements
+
+- Python 3.x
+- Tkinter library
+- Pillow library (for image resizing)
+- Pyperclip library
+
+Install the required libraries using the following command:
+
+```bash
+pip install pillow pyperclip
+```
+
+## Troubleshooting
+
