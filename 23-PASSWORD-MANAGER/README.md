@@ -151,3 +151,26 @@ window.mainloop()
 - Enters the main event loop for the Tkinter GUI, allowing the program to wait for user inputs and respond to events.
 
 This code creates a simple password manager application with a graphical interface, password generation functionality, and the ability to save user details to a file.
+
+# new update
+# def find_password 
+
+
+
+
+# Password Manager
+
+This is a simple password manager application built using Python's Tkinter library. The application allows users to generate secure passwords, save them along with associated website and email details, retrieve them, and find saved passwords.
+
+## Features
+
+1. **Password Generator:** The application includes a password generator that creates strong and secure passwords by combining letters (both uppercase and lowercase), numbers, and symbols.
+
+2. **Save Passwords:** Users can input website, email, and password details into the application. The entered details are then saved to a file (`data.txt`).
+
+3. **Find Passwords:** Users can search for and retrieve saved passwords by entering the associated website.
+
+4. **User Interface (UI):** The UI is created using Tkinter, providing a simple and user-friendly interface for interacting with the password manager.
+
+
+```
