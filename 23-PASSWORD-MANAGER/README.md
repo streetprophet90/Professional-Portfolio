@@ -235,3 +235,18 @@ def find_password():
 - Attempts to open the file named "data.json" using a context manager (`with` statement). If the file is found, its contents are loaded into the `data` variable using the `json.load()` function.
 - If the file is not found (raises `FileNotFoundError`), a message box is displayed informing the user that no data file was found.
 
+```python
+    else:
+        if website in data:
+            email = data[website]["email"]
+            password = data[website]["password"]
+            messagebox.showinfo(title=website, message=f"Email: {email}\nPassword: {password}")
+```
+- If the file is successfully loaded and the entered website is found in the data, the associated email and password are retrieved from the `data` dictionary.
+- A message box is displayed showing the retrieved email and password for the website.
+
+```python
+        else:
+            messagebox.showinfo(title="Error", message=f"No details for {website} exists.")
+```
+- If the entered website is not found in the data, a message box is displayed informing the user that no details exist for that website.
