@@ -217,4 +217,11 @@ Contributions are welcome! If you find any bugs, have suggestions for improvemen
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+```python
+def find_password():
+    website = website_entry.get()
 ```
+- Defines a function named `find_password` that retrieves the website entered by the user from the `website_entry` Entry widget. The `get()` method retrieves the content of the Entry widget.
+
