@@ -61,6 +61,14 @@ def save():
 
 
 # ---------------------------- FIND PASSWORD ------------------------------- #
+def find_password():
+    website = website_entry.get()
+    try:
+        with open("data.json") as data_file:
+            data = json.load(data_file)
+    except FileNotFoundError:
+        messagebox.showinfo(title="Error", message="No Data File Found.")
+
 
 
 # ---------------------------- UI SETUP ------------------------------- #
