@@ -203,3 +203,18 @@ pip install pillow pyperclip
 
 ## Troubleshooting
 
+If you encounter any issues with image loading, check the following:
+
+- Ensure the image file "logo.jpg" is in the correct location.
+- Provide the full absolute path to the image file if needed.
+- Confirm the image file is a valid format supported by Tkinter (e.g., JPEG, GIF, PNG).
+- Resize the image using the Pillow library if it is too large.
+
+## Contributions
+
+Contributions are welcome! If you find any bugs, have suggestions for improvements, or want to add new features, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
