@@ -225,3 +225,13 @@ def find_password():
 ```
 - Defines a function named `find_password` that retrieves the website entered by the user from the `website_entry` Entry widget. The `get()` method retrieves the content of the Entry widget.
 
+```python
+    try:
+        with open("data.json") as data_file:
+            data = json.load(data_file)
+    except FileNotFoundError:
+        messagebox.showinfo(title="Error", message="No Data File Found.")
+```
+- Attempts to open the file named "data.json" using a context manager (`with` statement). If the file is found, its contents are loaded into the `data` variable using the `json.load()` function.
+- If the file is not found (raises `FileNotFoundError`), a message box is displayed informing the user that no data file was found.
+
