@@ -172,5 +172,19 @@ This is a simple password manager application built using Python's Tkinter libra
 
 4. **User Interface (UI):** The UI is created using Tkinter, providing a simple and user-friendly interface for interacting with the password manager.
 
+## How to Use
 
-```
+1. **Generate Password:**
+   - Click the "Generate Password" button to create a strong and secure password.
+   - The generated password is displayed in the "Password" entry field and automatically copied to the clipboard.
+
+2. **Save Password:**
+   - Enter the website, email, and password details.
+   - Click the "Add" button to save the entered details to the `data.txt` file.
+   - A confirmation prompt will appear before saving.
+
+3. **Find Password:**
+   - Enter the website for which you want to retrieve the password.
+   - Click the "Find" button to search for the saved password.
+   - If the password is found, it will be displayed in a message box.
+
