@@ -1,0 +1,30 @@
+
+
+
+# Flashy
+
+Flashy is a simple flashcard application built using Python's Tkinter library. The application helps users learn new words or phrases by presenting them with flashcards and allowing them to flip between the front and back sides.
+
+## Features
+
+1. **Flashcard Presentation:** Flashy presents users with flashcards displaying words or phrases in one language on the front side and their corresponding translations in another language on the back side.
+
+2. **Flip Functionality:** Users can flip the flashcards to reveal the translations on the back side by clicking on them.
+
+3. **Learning Mode:** Flashy keeps track of the words or phrases that users are learning and removes them from the list once they are known.
+
+## How to Use
+
+1. **Next Card:**
+   - Click the "Next Card" button to display a new flashcard with a word or phrase in one language on the front side.
+
+2. **Flip Card:**
+   - Click on the flashcard to flip it and reveal the translation on the back side.
+
+3. **Known Words:**
+   - If you know the translation of a word or phrase, click the "I Know It" button to remove it from the learning list.
+
+
+
+
+This README provides an overview of the Flashy flashcard application, its features, how to use it, requirements, file structure, usage instructions, contributions, and license information.
