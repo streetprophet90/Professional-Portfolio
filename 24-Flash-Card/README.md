@@ -80,3 +80,20 @@ current_card = {}
 to_learn = {}
 ```
 
+- Defines a constant `BACKGROUND_COLOR` with a hex color code for the background color of the GUI.
+- Initializes two dictionaries: `current_card` to store the current flashcard being displayed, and `to_learn` to store the words or phrases that the user needs to learn.
+
+```python
+try:
+    data = pandas.read_csv("data/words_to_learn.csv")
+except FileNotFoundError:
+    original_data = pandas.read_csv("data/french_words.csv")
+    to_learn = original_data.to_dict(orient="records")
+else:
+    to_learn = data.to_dict(orient="records")
+```
+
+- Tries to read a CSV file named "words_to_learn.csv" containing words or phrases that the user needs to learn.
+- If the file is not found (`FileNotFoundError`), reads the original data from a CSV file named "french_words.csv" and converts it into a dictionary.
+- Otherwise, reads the data from the "words_to_learn.csv" file and converts it into a dictionary.
+
