@@ -59,3 +59,24 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 This README provides an overview of the Flashy flashcard application, its features, how to use it, requirements, file structure, usage instructions, contributions, and license information.
+
+# Every Line of Code
+
+
+
+```python
+from tkinter import *
+import pandas
+import random
+```
+
+- `from tkinter import *`: Imports all classes and functions from the tkinter module, which is used to create GUI applications.
+- `import pandas`: Imports the pandas library, which is used for data manipulation and analysis.
+- `import random`: Imports the random module, which is used for generating random numbers.
+
+```python
+BACKGROUND_COLOR = "#B1DDC6"
+current_card = {}
+to_learn = {}
+```
+
