@@ -97,3 +97,29 @@ else:
 - If the file is not found (`FileNotFoundError`), reads the original data from a CSV file named "french_words.csv" and converts it into a dictionary.
 - Otherwise, reads the data from the "words_to_learn.csv" file and converts it into a dictionary.
 
+```python
+def next_card():
+    global current_card, flip_timer
+    window.after_cancel(flip_timer)
+    current_card = random.choice(to_learn)
+    canvas.itemconfig(card_title, text="French", fill="black")
+    canvas.itemconfig(card_word, text=current_card["French"], fill="black")
+    canvas.itemconfig(card_background, image=card_front_img)
+    flip_timer = window.after(3000, func=flip_card)
+```
+
+- Defines a function `next_card()` to display the next flashcard.
+- Cancels any existing timer for flipping the card (`flip_timer`) using `after_cancel()`.
+- Selects a random card from the `to_learn` list and updates the `current_card`.
+- Configures the canvas to display the French text on the front side of the card.
+- Configures the canvas to display the French word or phrase from the `current_card`.
+- Configures the canvas to display the front side image of the card.
+- Sets a timer (`flip_timer`) to automatically flip the card after 3000 milliseconds (3 seconds) using `after()`.
+
+```python
+def flip_card():
+    canvas.itemconfig(card_title, text="English", fill="white")
+    canvas.itemconfig(card_word, text=current_card["English"], fill="white")
+    canvas.itemconfig(card_background, image=card_back_img)
+```
+
