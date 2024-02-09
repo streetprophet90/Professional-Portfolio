@@ -123,3 +123,16 @@ def flip_card():
     canvas.itemconfig(card_background, image=card_back_img)
 ```
 
+- Defines a function `flip_card()` to flip the flashcard to reveal the translation.
+- Configures the canvas to display the English text on the back side of the card.
+- Configures the canvas to display the English translation from the `current_card`.
+- Configures the canvas to display the back side image of the card.
+
+```python
+def is_known():
+    to_learn.remove(current_card)
+    data = pandas.DataFrame(to_learn)
+    data.to_csv("data/words_to_learn.csv", index=False)
+    next_card()
+```
+
