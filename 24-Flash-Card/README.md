@@ -25,6 +25,17 @@ Flashy is a simple flashcard application built using Python's Tkinter library. T
    - If you know the translation of a word or phrase, click the "I Know It" button to remove it from the learning list.
 
 
+## Requirements
+
+- Python 3.x
+- Tkinter library
+- Pandas library
+
+Install the required libraries using the following command:
+
+```bash
+pip install pandas
+```
 
 
 This README provides an overview of the Flashy flashcard application, its features, how to use it, requirements, file structure, usage instructions, contributions, and license information.
