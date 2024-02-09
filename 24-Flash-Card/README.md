@@ -154,4 +154,26 @@ flip_timer = window.after(3000, func=flip_card)
 - Configures the window with padding and background color.
 - Sets up a timer (`flip_timer`) to automatically flip the card after 3000 milliseconds (3 seconds) using `after()`.
 
-.
+```python
+canvas = Canvas(width=800, height=526)
+card_front_img = PhotoImage(file="images/card_front.png")
+card_back_img = PhotoImage(file="images/card_back.png")
+card_background = canvas.create_image(400, 263, image=card_front_img)
+card_title = canvas.create_text(400, 150, text="", font=("Arial", 40, "italic"))
+card_word = canvas.create_text(400, 263, text="", font=("Arial", 60, "bold"))
+canvas.config(bg=BACKGROUND_COLOR, highlightthickness=0)
+canvas.grid(row=0, column=0, columnspan=2)
+```
+
+- Creates a Canvas widget with specified width and height.
+- Loads images for the front and back sides of the flashcard.
+- Creates an image item (`card_background`) on the canvas representing the front side of the flashcard.
+- Creates text items (`card_title` and `card_word`) on the canvas for displaying the title and word/phrase.
+- Configures the canvas with background color and no highlight thickness.
+- Places the canvas in the window grid spanning two columns.
+
+```python
+window.mainloop()
+```
+
+- Enters the main event loop for the Tkinter GUI, allowing the program to wait for user inputs and respond to events
