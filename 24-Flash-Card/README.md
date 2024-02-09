@@ -136,3 +136,22 @@ def is_known():
     next_card()
 ```
 
+- Defines a function `is_known()` to mark the current word or phrase as known.
+- Removes the `current_card` from the `to_learn` list.
+- Converts the updated `to_learn` list into a DataFrame.
+- Writes the DataFrame to a CSV file named "words_to_learn.csv" without indexing.
+- Calls the `next_card()` function to display the next flashcard.
+
+```python
+window = Tk()
+window.title("Flashy")
+window.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
+
+flip_timer = window.after(3000, func=flip_card)
+```
+
+- Creates a Tkinter window object with the title "Flashy".
+- Configures the window with padding and background color.
+- Sets up a timer (`flip_timer`) to automatically flip the card after 3000 milliseconds (3 seconds) using `after()`.
+
+.
