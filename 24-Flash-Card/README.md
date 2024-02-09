@@ -49,6 +49,13 @@ pip install pandas
 3. Flip the flashcards to reveal their translations.
 4. Click the "I Know It" button for words or phrases that you know to remove them from the learning list.
 
+## Contributions
+
+Contributions are welcome! If you find any bugs, have suggestions for improvements, or want to add new features, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
 This README provides an overview of the Flashy flashcard application, its features, how to use it, requirements, file structure, usage instructions, contributions, and license information.
