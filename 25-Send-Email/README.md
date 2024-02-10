@@ -45,3 +45,18 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 This README provides an overview of the Birthday Email Sender project, including its purpose, steps, requirements, usage instructions, notes, and license information.
+
+# Every line of Code
+
+```python
+from datetime import datetime
+import pandas
+import random
+import smtplib
+```
+
+- `from datetime import datetime`: Imports the `datetime` class from the `datetime` module, which is used to work with dates and times.
+- `import pandas`: Imports the `pandas` library, which is used for data manipulation and analysis, particularly for reading CSV files.
+- `import random`: Imports the `random` module, which provides functions for generating random numbers.
+- `import smtplib`: Imports the `smtplib` module, which is used for sending emails using the Simple Mail Transfer Protocol (SMTP).
+
