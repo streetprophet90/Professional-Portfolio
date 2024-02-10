@@ -16,3 +16,13 @@ This is an extra hard starting project that automates sending birthday emails to
 3. **Pick a random letter from letter templates:**
    - If a birthday matches today's date, the program selects a random letter template from a specified directory.
 
+4. **Send the letter to the person's email address:**
+   - The program replaces placeholders in the letter template with the person's actual name and sends the letter to their email address using SMTP (Simple Mail Transfer Protocol).
+
+## Requirements
+
+- Python 3.x
+- Pandas library (for reading CSV files)
+- smtplib module (for sending emails)
+- Access to an SMTP server (e.g., Gmail) to send emails
+
