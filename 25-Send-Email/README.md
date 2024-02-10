@@ -75,3 +75,20 @@ today_tuple = (today.month, today.day)
 - Retrieves the current date and time using the `datetime.now()` method and stores it in the `today` variable.
 - Extracts the month and day from the current date and stores them as a tuple in the `today_tuple` variable.
 
+```python
+data = pandas.read_csv("birthdays.csv")
+birthdays_dict = {(data_row["month"], data_row["day"]): data_row for (index, data_row) in data.iterrows()}
+```
+
+- Reads the data from the CSV file named "birthdays.csv" using `pandas.read_csv()` and stores it in the `data` DataFrame.
+- Iterates over each row in the DataFrame using `data.iterrows()`, extracts the month and day from each row, and creates a dictionary called `birthdays_dict`. This dictionary has tuples of month and day as keys and the corresponding rows from the DataFrame as values.
+
+```python
+if today_tuple in birthdays_dict:
+    birthday_person = birthdays_dict[today_tuple]
+    file_path = f"letter_templates/letter_{random.randint(1, 3)}.txt"
+    with open(file_path) as letter_file:
+        contents = letter_file.read()
+        contents = contents.replace("[NAME]", birthday_person["name"])
+```
+
