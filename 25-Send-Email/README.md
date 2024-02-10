@@ -26,3 +26,11 @@ This is an extra hard starting project that automates sending birthday emails to
 - smtplib module (for sending emails)
 - Access to an SMTP server (e.g., Gmail) to send emails
 
+## Usage
+
+1. Ensure the birthdays.csv file is correctly formatted with names, birthdays, and email addresses.
+2. Create letter templates (letter_1.txt, letter_2.txt, etc.) with placeholders for names.
+3. Replace placeholders in the letter templates with `[NAME]` to be dynamically replaced with the birthday person's name.
+4. Update the `MY_EMAIL` and `MY_PASSWORD` variables with your email credentials.
+5. Run the program, and it will automatically check for birthdays and send emails if there's a match.
+
