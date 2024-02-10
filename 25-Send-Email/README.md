@@ -92,3 +92,24 @@ if today_tuple in birthdays_dict:
         contents = contents.replace("[NAME]", birthday_person["name"])
 ```
 
+- Checks if today's date (stored in `today_tuple`) matches any birthday in the `birthdays_dict`.
+- If there's a match, selects the corresponding birthday person's data from `birthdays_dict` and stores it in `birthday_person`.
+- Constructs a file path for a letter template by randomly choosing a number between 1 and 3 using `random.randint()` and appending it to the file path string.
+- Opens the selected letter template file, reads its contents, and replaces the placeholder `[NAME]` with the birthday person's name.
+
+```python
+with smtplib.SMTP("smtp.gmail.com") as connection:
+    connection.starttls()
+    connection.login(MY_EMAIL, MY_PASSWORD)
+    connection.sendmail(from_addr=MY_EMAIL,
+                        to_addrs=birthday_person["email"],
+                        msg=f"Subject:Happy Birthday!\n\n{contents}"
+                        )
+```
+
+- Establishes a connection to the Gmail SMTP server (`smtp.gmail.com`) using `smtplib.SMTP()`.
+- Starts the TLS (Transport Layer Security) encryption protocol for secure communication with `connection.starttls()`.
+- Logs in to the SMTP server using the sender's email address (`MY_EMAIL`) and password (`MY_PASSWORD`) with `connection.login()`.
+- Sends an email using `connection.sendmail()` by specifying the sender's email address (`from_addr`), the recipient's email address obtained from `birthday_person["email"]` (`to_addrs`), and the message content (`msg`). The message contains a subject line ("Happy Birthday!") and the contents of the letter template with the birthday person's name.
+
+Each line of code in this script serves a specific purpose, from reading birthday data, selecting a random letter template, to sending birthday emails to recipients.
