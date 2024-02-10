@@ -34,3 +34,14 @@ This is an extra hard starting project that automates sending birthday emails to
 4. Update the `MY_EMAIL` and `MY_PASSWORD` variables with your email credentials.
 5. Run the program, and it will automatically check for birthdays and send emails if there's a match.
 
+## Note
+
+- This project uses Gmail's SMTP server for sending emails. Ensure that "Less secure app access" is turned on in your Gmail account settings or use App Passwords if you have 2-step verification enabled.
+- Make sure to handle exceptions and errors, especially regarding file paths, SMTP connections, and email sending.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+This README provides an overview of the Birthday Email Sender project, including its purpose, steps, requirements, usage instructions, notes, and license information.
