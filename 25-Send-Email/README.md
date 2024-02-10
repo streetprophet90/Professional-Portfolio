@@ -60,3 +60,18 @@ import smtplib
 - `import random`: Imports the `random` module, which provides functions for generating random numbers.
 - `import smtplib`: Imports the `smtplib` module, which is used for sending emails using the Simple Mail Transfer Protocol (SMTP).
 
+```python
+MY_EMAIL = ""
+MY_PASSWORD = ""
+```
+
+- Defines two empty strings, `MY_EMAIL` and `MY_PASSWORD`, to store the sender's email address and password, respectively. These will be filled with actual email credentials later in the code.
+
+```python
+today = datetime.now()
+today_tuple = (today.month, today.day)
+```
+
+- Retrieves the current date and time using the `datetime.now()` method and stores it in the `today` variable.
+- Extracts the month and day from the current date and stores them as a tuple in the `today_tuple` variable.
+
