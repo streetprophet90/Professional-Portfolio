@@ -19,3 +19,6 @@ import smtplib
 MY_EMAIL = ""
 MY_PASSWORD = ""
 
+today = datetime.now()
+today_tuple = (today.month, today.day)
+
