@@ -72,3 +72,22 @@ MY_LONG = -1.615800  # Your longitude
 - Defines variables `MY_EMAIL`, `MY_PASSWORD`, `MY_LAT`, and `MY_LONG` to store the user's email credentials, latitude, and longitude.
 - Note: The email credentials should be filled with the user's actual email address and password. Latitude and longitude should be set to the user's actual coordinates.
 
+```python
+def is_iss_overhead():
+    response = requests.get(url="http://api.open-notify.org/iss-now.json")
+    response.raise_for_status()
+    data = response.json()
+
+    iss_latitude = float(data["iss_position"]["latitude"])
+    iss_longitude = float(data["iss_position"]["longitude"])
+
+    # Your position is within +5 or -5 degrees of the ISS position.
+    if MY_LAT - 5 <= iss_latitude <= MY_LAT + 5 and MY_LONG - 5 <= iss_longitude <= MY_LONG + 5:
+        return True
+```
+
+- Defines a function `is_iss_overhead()` to check if the ISS (International Space Station) is overhead the user's location.
+- Makes a GET request to the Open Notify API endpoint (`http://api.open-notify.org/iss-now.json`) to get the current position of the ISS.
+- Parses the JSON response and extracts the ISS latitude and longitude.
+- Checks if the difference between the user's latitude and longitude and the ISS latitude and longitude is within ±5 degrees. If so, returns `True`.
+
