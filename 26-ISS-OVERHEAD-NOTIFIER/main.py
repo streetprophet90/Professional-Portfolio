@@ -39,3 +39,18 @@ def is_night():
     if time_now >= sunset or time_now <= sunrise:
         return True
 
+while True:
+    time.sleep(60)
+    if is_iss_overhead() and is_night():
+        connection = smtplib.SMTP("smtp.gmail.com")
+        connection.starttls()
+        connection.login(MY_EMAIL, MY_PASSWORD)
+        connection.sendmail(
+            from_addr=MY_EMAIL,
+            to_addrs=MY_EMAIL,
+            msg="Subject:Look UP\n\nThe ISS is above you in the sky."
+        )
+    #If the ISS is close to my current position
+    # and it is currently dark
+    # Then send me an email to tell me to look up.
+    # BONUS: run the code every 60 seconds.
