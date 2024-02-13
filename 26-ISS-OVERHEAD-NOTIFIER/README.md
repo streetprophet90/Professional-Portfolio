@@ -111,3 +111,10 @@ def is_night():
         return True
 ```
 
+- Defines a function `is_night()` to check if it's currently nighttime at the user's location.
+- Constructs a dictionary `parameters` containing latitude, longitude, and a parameter to return unformatted times.
+- Makes a GET request to the Sunrise-Sunset API endpoint (`https://api.sunrise-sunset.org/json`) with the specified parameters.
+- Parses the JSON response to extract the sunrise and sunset times and convert them to integers.
+- Retrieves the current hour using `datetime.now().hour`.
+- Checks if the current hour is greater than or equal to the sunset hour or less than or equal to the sunrise hour. If so, returns `True`.
+
