@@ -36,3 +36,14 @@ This script tracks the International Space Station (ISS) and notifies the user v
 3. **Receive Notifications:**
    - If the ISS is overhead during nighttime, you will receive an email notification informing you to look up at the sky.
 
+## Note
+
+- Ensure that your email provider allows access via SMTP. For Gmail, you may need to enable "Less secure app access" in your account settings.
+- Keep in mind that the script will run indefinitely, checking the ISS position and nighttime conditions every 60 seconds.
+
+## License
+```
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
+
+This README provides an overview of the ISS Tracker and Nighttime Notifier script, including its functionality, requirements, usage instructions, notes, and license information.
