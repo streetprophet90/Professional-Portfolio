@@ -132,3 +132,12 @@ while True:
         )
 ```
 
+- Enters an infinite loop using `while True`.
+- Pauses the execution for 60 seconds using `time.sleep(60)` to avoid making too many API requests.
+- Checks if both `is_iss_overhead()` and `is_night()` functions return `True`. If so, sends an email notification.
+- Establishes a connection to the Gmail SMTP server (`smtp.gmail.com`) using `smtplib.SMTP()`.
+- Starts the TLS (Transport Layer Security) encryption protocol for secure communication with `connection.starttls()`.
+- Logs in to the SMTP server using the user's email credentials (`MY_EMAIL` and `MY_PASSWORD`) with `connection.login()`.
+- Sends an email using `connection.sendmail()` with the specified sender and recipient email addresses and the message content.
+
+Each line of code in this script serves a specific purpose, from checking the ISS position and nighttime conditions to sending email notifications.
