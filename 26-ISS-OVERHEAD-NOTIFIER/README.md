@@ -57,3 +57,18 @@ import smtplib
 import time
 ```
 
+- `import requests`: Imports the `requests` library, which is used to make HTTP requests to APIs.
+- `from datetime import datetime`: Imports the `datetime` class from the `datetime` module, which is used to work with dates and times.
+- `import smtplib`: Imports the `smtplib` module, which is used for sending emails using the Simple Mail Transfer Protocol (SMTP).
+- `import time`: Imports the `time` module, which is used to add time-related functionality such as delays.
+
+```python
+MY_EMAIL = ""
+MY_PASSWORD = ""
+MY_LAT = 6.695070  # Your latitude
+MY_LONG = -1.615800  # Your longitude
+```
+
+- Defines variables `MY_EMAIL`, `MY_PASSWORD`, `MY_LAT`, and `MY_LONG` to store the user's email credentials, latitude, and longitude.
+- Note: The email credentials should be filled with the user's actual email address and password. Latitude and longitude should be set to the user's actual coordinates.
+
