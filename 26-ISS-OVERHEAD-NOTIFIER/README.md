@@ -118,3 +118,17 @@ def is_night():
 - Retrieves the current hour using `datetime.now().hour`.
 - Checks if the current hour is greater than or equal to the sunset hour or less than or equal to the sunrise hour. If so, returns `True`.
 
+```python
+while True:
+    time.sleep(60)
+    if is_iss_overhead() and is_night():
+        connection = smtplib.SMTP("smtp.gmail.com")
+        connection.starttls()
+        connection.login(MY_EMAIL, MY_PASSWORD)
+        connection.sendmail(
+            from_addr=MY_EMAIL,
+            to_addrs=MY_EMAIL,
+            msg="Subject:Look UP\n\nThe ISS is above you in the sky."
+        )
+```
+
