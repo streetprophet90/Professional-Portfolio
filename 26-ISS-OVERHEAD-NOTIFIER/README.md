@@ -25,3 +25,14 @@ This script tracks the International Space Station (ISS) and notifies the user v
 - `time` module (for adding delays)
 - Access to an SMTP server (e.g., Gmail) to send emails
 
+## Usage
+
+1. **Setup:**
+   - Replace the placeholders for `MY_EMAIL`, `MY_PASSWORD`, `MY_LAT`, and `MY_LONG` with your email credentials and your latitude and longitude, respectively.
+
+2. **Run the Script:**
+   - Execute the script, and it will continuously monitor the ISS and nighttime conditions in the background.
+
+3. **Receive Notifications:**
+   - If the ISS is overhead during nighttime, you will receive an email notification informing you to look up at the sky.
+
