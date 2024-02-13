@@ -47,3 +47,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ```
 
 This README provides an overview of the ISS Tracker and Nighttime Notifier script, including its functionality, requirements, usage instructions, notes, and license information.
+
+# Every line of Code
+
+```python
+import requests
+from datetime import datetime
+import smtplib
+import time
+```
+
