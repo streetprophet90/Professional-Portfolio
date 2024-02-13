@@ -91,3 +91,23 @@ def is_iss_overhead():
 - Parses the JSON response and extracts the ISS latitude and longitude.
 - Checks if the difference between the user's latitude and longitude and the ISS latitude and longitude is within ±5 degrees. If so, returns `True`.
 
+```python
+def is_night():
+    parameters = {
+        "lat": MY_LAT,
+        "lng": MY_LONG,
+        "formatted": 0,
+    }
+
+    response = requests.get("https://api.sunrise-sunset.org/json", params=parameters)
+    response.raise_for_status()
+    data = response.json()
+    sunrise = int(data["results"]["sunrise"].split("T")[1].split(":")[0])
+    sunset = int(data["results"]["sunset"].split("T")[1].split(":")[0])
+
+    time_now = datetime.now().hour
+
+    if time_now >= sunset or time_now <= sunrise:
+        return True
+```
+
